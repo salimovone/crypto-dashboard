@@ -1,0 +1,9 @@
+.App{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background: url("./assets/img/crypto-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0%;
+}
