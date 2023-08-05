@@ -1,15 +1,18 @@
-import { Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-// import SideBar from ;
+import SideBar from './components/Sidebar';
+import Dashboard from "./views/Home";
 
 function App() {
   return (
-    <div className="App flex">
+    <div className="App">
       <div className="">
         <SideBar />
       </div>
-      <div className="">
-        <Routes></Routes>
+      <div className="bg-page">
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+        </Routes>
       </div>
     </div>
   );
