@@ -1,13 +1,10 @@
 import { Routes } from "react-router-dom";
 import "./App.css";
-import SideBar from "./components/SideBar";
 
 function App() {
   return (
     <div className="App flex">
-      <div className="">
-        <SideBar />
-      </div>
+      <div className=""></div>
       <div className="">
         <Routes></Routes>
       </div>
