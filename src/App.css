@@ -1,13 +1,12 @@
-.App{
-    display: grid;
-    grid-template-columns: auto 1fr;
-    background: url("./assets/img/crypto-bg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0%;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
+.App {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  background: url("./assets/img/crypto-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
 }
