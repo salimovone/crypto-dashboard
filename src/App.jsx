@@ -6,10 +6,10 @@ import Dashboard from "./views/Home";
 function App() {
   return (
     <div className="App">
-      <div className="">
+      <div className="overflow-y-scroll h-[100vh]">
         <SideBar />
       </div>
-      <div className="bg-page">
+      <div className="bg-page overflow-y-scroll h-[100vh]">
         <Routes>
           <Route path="/" element={<Dashboard />} />
         </Routes>
