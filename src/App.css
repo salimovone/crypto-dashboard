@@ -1,3 +1,12 @@
-.bggg{
-    background-color: rgba(0, 0, 0, 0.477);
+.App {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  background: url("./assets/img/crypto-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
 }
