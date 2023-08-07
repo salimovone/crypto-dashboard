@@ -1,0 +1,59 @@
+.App{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.container_buySell{
+    width: 100% !important; 
+    height: 100% !important;
+    padding: 2%;
+}
+
+.salom::-webkit-scrollbar{
+    display: none;
+}
+
+.select_buySell{
+    margin-top: 30px !important;
+    height: 300px !important;
+    box-shadow: 0 4px 9px #e1ecff, inset 0 0 15px rgba(255,255,255,.35);
+    border-radius: 5px;
+    background: #F0F6FF !important;
+    padding: 20px;
+}
+
+
+@media screen and (max-width: 1024px){
+    .container_buySell{
+        width: 95%;
+        padding: 3%;
+    }
+
+    .select_buySell{
+        height: 90% !important;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .select_buySell{
+        height: 90% !important;
+    }
+}
+
+@media screen and (max-width: 426px){
+    .icons_buySell{
+        margin-left: -30px !important;
+    }
+
+
+}
+
+@media screen and (max-width: 376px){
+    .icons_buySell{
+        display: none !important;
+    }
+
+    .container_buySell{
+        width: 90%;
+    }
+}
