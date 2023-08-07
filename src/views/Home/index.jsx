@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Dashboard = () => {
-  return (
-    <div className='w-full h-[205vh]  p-[30px] pt-16'>
+  return <div className="w-full h-[205vh]  p-[30px] pt-16"></div>;
+};
 
-    </div>
-  )
-}
-
-export default Dashboard
+export default Dashboard;
