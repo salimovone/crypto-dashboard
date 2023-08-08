@@ -12,9 +12,9 @@ const initialState = {
             idNo: "#4562665",
             type: 'Ethereum',
             method: 'Visa',
-            amount: '$ 197,078,267,295',
+            amount: '$197,078,267,295',
             img: img1,
-            time: `15 May 2022`,
+            time: '15 May 2022',
             statuss: 'Pending', 
             time2: '05:30 AM'
         },

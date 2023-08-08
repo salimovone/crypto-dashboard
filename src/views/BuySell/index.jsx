@@ -9,7 +9,7 @@ function BuySell() {
 
     return (
         <>
-            <div className="w-screen xl:w-auto h-full flex justify-center pt-16 overflow-hidden">
+            <div className="w-full xl:w-auto flex justify-center pt-16 overflow-hidden">
                 <div className="container_buySell">
                     <div>
                         <div>
@@ -161,7 +161,7 @@ function BuySell() {
                             <p>entired</p>
                         </div>
 
-                        <div className="mt-5 w-[95%]">
+                        <div className="mt-5 w-[100%]">
                             <Table/>
                         </div>
                     </div>
