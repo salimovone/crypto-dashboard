@@ -14,9 +14,6 @@ function Actives() {
         dispatch(deleteUsers(id))
     }
 
-
-
-
     return (
         <>
             <div className="w-full p-10 mt-5">
