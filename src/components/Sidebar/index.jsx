@@ -23,7 +23,7 @@ const SideBar = () => {
 
   return (
     <div
-      className={`bg-[#fff5]  h-screen sidebar  p-6 pt-5 
+      className={`h-screen sidebar  p-6 pt-5 
              ${open ? "w-[250px]" : "w-[80px]"}  duration-300 relative`}
     >
       <BiChevronLeft

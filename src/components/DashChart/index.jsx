@@ -1,6 +1,7 @@
 import { MdOutlineFileDownload } from "react-icons/md"; 
 import React from "react";
 import { DownloadButton, H2, Main, TimerButton } from "./style";
+import CandleStickChart from "../CandleStickChart";
 
  
 
@@ -21,13 +22,15 @@ const Dashchart = () => {
             ))}
           </div>
         </div>
-        <div className="flex gap-1">
+        <div className="flex gap-1 max-sm:flex-wrap">
           {["1M", "5M", "20M", "30M", "1Hr", "2Hr"].map((item,idx) => (
             <TimerButton key={item} active={idx===2&&true}>{item}</TimerButton>
           ))}
           <DownloadButton><MdOutlineFileDownload /></DownloadButton>
+
         </div>
       </div>
+          <CandleStickChart />
     </Main>
   );
 };
