@@ -10,10 +10,10 @@ import View from "./views/Transactions/View-Transaction";
 function App() {
   return (
     <div className="App ">
-      <div className="overflow-y-scroll h-screen overflow-x-hidden Scroll">
+      <div className="overflow-y-scroll h-screen overflow-x-hidden Scroll bg-[#fff5]">
         <SideBar />
       </div>
-      <div className=" overflow-y-scroll h-screen Scroll">
+      <div className=" overflow-y-scroll h-screen">
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/buySell" element={<BuySell/>}/>

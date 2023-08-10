@@ -10,3 +10,20 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.Scroll::-webkit-scrollbar {
+  background-color: transparent;
+  width: 6px;
+  display: none;
+}
+
+.cardTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.cardSubtitle {
+  color: #818181;
+  font-size: 14px;
+}

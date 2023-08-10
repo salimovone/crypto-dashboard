@@ -5,6 +5,7 @@ import HeadCard from '../../components/HeadCard'
 import { Ul } from './style'
 import HeadBtcIndex from '../../components/HeadBtcIndex'
 import Dashchart from '../../components/DashChart'
+import ExchangeCrypto from '../../components/ExchangeCrypto'
 
 const Dashboard = () => {
   return (
@@ -19,6 +20,7 @@ const Dashboard = () => {
         ))}
       </Ul>
       <Dashchart />
+      <ExchangeCrypto />
     </div>
   )
 }

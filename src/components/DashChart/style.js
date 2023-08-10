@@ -31,6 +31,7 @@ export const TimerButton = styled.div`
     margin-right: 5px;
     font-size: 12px;
     color: ${({active})=>active&&"white"};
+    cursor: pointer;
     &:hover{
         background-color: #234ce3;
         color: white;
