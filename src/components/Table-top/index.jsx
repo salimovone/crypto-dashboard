@@ -25,7 +25,7 @@ function Table() {
                     </div>
 
                     <div>
-                        <select id="countries" class="border px-8 w-[85%] h-[40px] bg-inherit border-blue-600 rounded-lg">
+                        <select id="countries" class="border px-8 w-[80%] h-[40px] bg-inherit border-blue-600 rounded-lg">
                             <option selected>Status</option>
                             <option value="US">United States</option>
                             <option value="CA">Canada</option>
@@ -34,10 +34,10 @@ function Table() {
                         </select>
                     </div>
 
-                    <div className="flex gap-2">
+                    <div className="flex gap-2 -ml-5">
                         <p className="pt-2">SortBy:</p>
                         <div><input type="date" className="h-[40px] w-[80%] bg-inherit px-10 lg:px-6 rounded-xl border border-blue-600" /></div>
-                        <div className="rounded-full icons_buySell w-[40px] xl:-ml-8 text-[22px] text-blue-600 flex justify-center items-center h-[40px]  border border-blue-600">
+                        <div className="rounded-md xl:w-[40px] xl:-ml-8 text-[22px] text-blue-600 flex justify-center items-center h-[40px]  border border-blue-600">
                             <AiOutlineDownload />
                         </div>
                     </div>

@@ -36,19 +36,19 @@ function Marketcap() {
                                 </div>
 
                                 <div className='flex gap-2'>
-                                    <button onClick={() => setAlls(5)} className={`w-[45px] h-[45px] bg-[#e3e9ff] flex justify-center items-center rounded-md ${alls === 5 ? "bg-[blue]" : ""}`}>
+                                    <button onClick={() => setAlls(5)} className={`w-[45px] hover:bg-blue-700 h-[45px] bg-[#e3e9ff] flex justify-center items-center rounded-md ${alls === 5 ? "bg-[blue]" : ""}`}>
                                         <img src={img1} alt="" className={`w-[20px] h-[20px] ${alls === 5 ? "img1" : ""}`} />
                                     </button>
-                                    <button onClick={() => setAlls(10)} className={`w-[45px] h-[45px] bg-[#e3e9ff] flex justify-center items-center rounded-md ${alls === 10 ? "bg-[blue]" : ""}`}>
+                                    <button onClick={() => setAlls(10)} className={`w-[45px] hover:bg-blue-500 h-[45px] bg-[#e3e9ff] flex justify-center items-center rounded-md ${alls === 10 ? "bg-[blue]" : ""}`}>
                                         <img src={img2} alt="" className={`w-[20px] h-[20px] ${alls === 10 ? "img1" : ""}`} />
                                     </button>
-                                    <button onClick={() => setAlls(15)} className={`w-[45px] h-[45px] bg-[#e3e9ff] flex justify-center items-center rounded-md ${alls === 15 ? "bg-[blue]" : ""}`}>
+                                    <button onClick={() => setAlls(15)} className={`w-[45px] hover:bg-blue-500 h-[45px] bg-[#e3e9ff] flex justify-center items-center rounded-md ${alls === 15 ? "bg-[blue]" : ""}`}>
                                         <img src={img3} alt="" className={`w-[20px] h-[20px] ${alls === 15 ? "img1" : ""}`} />
                                     </button>
-                                    <button onClick={() => setAlls(20)} className={`w-[45px] h-[45px] bg-[#e3e9ff] flex justify-center items-center rounded-md ${alls === 20 ? "bg-[blue]" : ""}`}>
+                                    <button onClick={() => setAlls(20)} className={`w-[45px] hover:bg-blue-500 h-[45px] bg-[#e3e9ff] flex justify-center items-center rounded-md ${alls === 20 ? "bg-[blue]" : ""}`}>
                                         <img src={img4} alt="" className={`w-[20px] h-[20px] ${alls === 20 ? "img1" : ""}`} />
                                     </button>
-                                    <button onClick={() => setAlls(25)} className={`w-[45px] h-[45px] bg-[#e3e9ff] flex justify-center items-center rounded-md ${alls === 25 ? "bg-[blue]" : ""}`}>
+                                    <button onClick={() => setAlls(25)} className={`w-[45px] hover:bg-blue-500 h-[45px] bg-[#e3e9ff] flex justify-center items-center rounded-md ${alls === 25 ? "bg-[blue]" : ""}`}>
                                         <img src={img5} alt="" className={`w-[20px] h-[20px] ${alls === 25 ? "img1" : ""}`} />
                                     </button>
                                 </div>

@@ -29,7 +29,7 @@ function BuySell() {
 
     const handleDelete = () => {
         dispatch(deleteUsers(open))
-        // setOpen(false)
+        setOpen(false)
         setNumber2(number2 - 1)
     }
 
@@ -107,7 +107,7 @@ function BuySell() {
 
     return (
         <>
-            {/* <div className={`${open ? 'bggg h-[100%]  w-[100%] z-[10000000] flex justify-center items-center' : 'hidden'}`}>
+            <div className={`${open ? 'bggg h-[100%]  w-[100%] z-[10000000] flex justify-center items-center' : 'hidden'}`}>
                 <div>
                     <div className="w-[300px] h-[200px] bg-white text-center flex justify-center items-center">
                         <div>
@@ -121,7 +121,7 @@ function BuySell() {
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
 
             <div className={modal ? "w-[100%] h-[100%] bg-white z-[1000000] flex justify-center" : "hidden"}>
                 <div>
@@ -298,7 +298,7 @@ function BuySell() {
                                                                         active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                                                                         'block px-4 py-2 text-sm'
                                                                     )}
-                                                                    onClick={() => { handleDelete() }}
+                                                                    onClick={() => { setOpen(item.id) }}
                                                                 >
                                                                     Delete
                                                                 </div>

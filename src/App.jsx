@@ -5,6 +5,7 @@ import BuySell from "./views/BuySell";
 import Dashboard from "./views/Home";
 import Marketcap from "./views/Marketcap";
 import Actives from "./views/Actives";
+import View from "./views/Transactions/View-Transaction";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/buySell" element={<BuySell/>}/>
           <Route path="/marketcap" element={<Marketcap/>}/>
           <Route path="/activities" element={<Actives/>}/>
+          <Route path="/viewTransaction" element={<View/>}/>
         </Routes>
       </div>
     </div>
