@@ -8,14 +8,14 @@ import Marketcap from "./views/Marketcap";
 function App() {
   return (
     <div className="App ">
-      <div className="overflow-y-scroll h-screen overflow-x-hidden Scroll">
+      <div className="overflow-y-scroll h-screen overflow-x-hidden Scroll hidden lg:block">
         <SideBar />
       </div>
       <div className=" overflow-y-scroll h-screen Scroll">
         <Routes>
           <Route path="/" element={<Dashboard />} />
-          <Route path="/buySell" element={<BuySell/>}/>
-          <Route path="/marketcap" element={<Marketcap/>}/>
+          <Route path="/buySell" element={<BuySell />} />
+          <Route path="/marketcap" element={<Marketcap />} />
         </Routes>
       </div>
     </div>
