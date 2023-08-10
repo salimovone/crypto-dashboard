@@ -59,7 +59,8 @@ function BuySell() {
                 method: edit.data.method,
                 amount: edit.data.amount,
                 statuss: edit.data.statuss,
-                id: edit.data.id
+                id: edit.data.id,
+                time: edit.data.time,
             })
         }
     }, [edit.type])
@@ -71,7 +72,8 @@ function BuySell() {
             method: "",
             amount: "",
             statuss: "",
-            id: ''
+            id: "",
+            time: ""
         },
         onSubmit: values => {
             if (edit.type) {
@@ -81,7 +83,8 @@ function BuySell() {
                     amount: values.amount,
                     statuss: values.statuss,
                     method: values.method,
-                    id: values.id
+                    id: values.id,
+                    time: values.time
                 }
                 dispatch(updateUsers(payload))
             } else {
@@ -91,7 +94,8 @@ function BuySell() {
                     amount: values.amount,
                     statuss: values.statuss,
                     method: values.method,
-                    id: values.id
+                    id: values.id,
+                    time: values.time
                 }
                 dispatch(deleteUsers(payload))
             }
@@ -157,6 +161,18 @@ function BuySell() {
                             onChange={formik.handleChange}
                             required
                             value={formik.values.method}
+                        />
+
+                        <label htmlFor="" className="mt-3">Trade Time:</label>
+                        <input
+                            id="time"
+                            name="time"
+                            className='border-2 py-2 px-4 block border-red-500'
+                            type="text"
+                            placeholder='Trade Time'
+                            onChange={formik.handleChange}
+                            required
+                            value={formik.values.time}
                         />
 
                         <label htmlFor="" className="mt-3">Amount:</label>

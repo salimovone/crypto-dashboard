@@ -1,11 +1,14 @@
-import React from "react";
-import HeadIntro from "../../components/HeadIntro";
-import { cardData } from "./data";
-import HeadCard from "../../components/HeadCard";
-import { Ul } from "./style";
-import HeadBtcIndex from "../../components/HeadBtcIndex";
-import Dashchart from "../../components/DashChart";
+
+import React from 'react'
 import Navbar from "../../components/Navbar";
+import HeadIntro from '../../components/HeadIntro'
+import { cardData } from './data'
+import HeadCard from '../../components/HeadCard'
+import { Ul } from './style'
+import HeadBtcIndex from '../../components/HeadBtcIndex'
+import Dashchart from '../../components/DashChart'
+import ExchangeCrypto from '../../components/ExchangeCrypto'
+
 
 const Dashboard = () => {
   return (
@@ -26,6 +29,7 @@ const Dashboard = () => {
             ))}
         </Ul>
         <Dashchart />
+         <ExchangeCrypto />
       </div>
     </div>
   );
