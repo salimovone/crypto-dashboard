@@ -10,12 +10,13 @@ import View from "./views/Transactions/View-Transaction";
 function App() {
   return (
     <div className="App ">
-      <div className="overflow-y-scroll h-screen overflow-x-hidden Scroll bg-[#fff5]">
+      <div className="overflow-y-scroll h-screen overflow-x-hidden Scroll hidden lg:block">   
         <SideBar />
       </div>
       <div className=" overflow-y-scroll h-screen">
         <Routes>
           <Route path="/" element={<Dashboard />} />
+          <Route path="/marketcap" element={<Marketcap />} />
           <Route path="/buySell" element={<BuySell/>}/>
           <Route path="/marketcap" element={<Marketcap/>}/>
           <Route path="/activities" element={<Actives/>}/>
