@@ -11,6 +11,7 @@
   top: 0;
 }
 
+
 .container_search {
   width: 100%;
   padding: 30px;
@@ -84,4 +85,11 @@
       color: red;
       z-index: 1000000;
   }
+}
+
+NavLink:hover {
+  color: #234ce3;
+}
+.Shadow {
+  box-shadow: 0 4px 9px #e1ecff, inset 0 0 15px rgba(255, 255, 255, 0.35);
 }
