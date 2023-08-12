@@ -91,7 +91,7 @@ function BuySell() {
                     time: values.time
                 }
                 dispatch(updateUsers(payload))
-            }else {
+            } else {
                 const payload = {
                     idNo: values.idNo,
                     type: values.type,
@@ -103,7 +103,7 @@ function BuySell() {
                 }
                 dispatch(addUsers(payload))
             }
-            
+
             formik.resetForm()
             setEdit({ type: false, data: null })
             setModal(false)
@@ -220,8 +220,8 @@ function BuySell() {
             <button className='mt-5 bg-green-600 -mb-5 py-2 px-10 rounded-lg text-white font-semibold' onClick={() => handldkls()}>Add user</button>
             </div> */}
 
-            <div class="relative overflow-x-scroll salom sm:rounded-lg h-full mt-14 z-30">
-                <table class="w-[100%] text-sm text-left ">
+            <div class="relative  overflow-x-scroll  xl:overflow-x-hidden sm:rounded-lg  h-full mt-14 z-30">
+                <table class="w-[1100px] xl:w-[100%] text-sm text-left overflow-x-scroll">
                     <thead class="text-md text-[#35446F] uppercase bg-inherit pb-10">
                         <tr>
                             <th scope="col" class="px-4 py-3">
@@ -250,7 +250,7 @@ function BuySell() {
                             </th>
                         </tr>
                     </thead>
-                    <tbody className="border shadow-md h-full">
+                    <tbody className="border shadow-md h-full bg-[rgba(255,255,255,.4)]">
                         {
                             user.map((item) => (
                                 <tr class="border-y " key={item.id}>
@@ -333,21 +333,22 @@ function BuySell() {
                     </tbody>
                 </table>
 
-                <div className="grid grid-cols-2 w-[96%] pt-4 ml-3">
-                    <div className="text-[#566787]">
-                        <p>Showing {number} out of {number2} entries</p>
-                    </div>
 
-                    <div className="ml-80">
-                        <div className="flex gap-2">
-                            <button onClick={handleMinus}>Prevous</button>
-                            <button className={`text-[0px] w-0 ${number === 5 && 'bg-blue-500  w-[30.1px] h-[30px] text-[19.1px] justify-center flex text-white'}`} onClick={() => setnumber(5)}>1</button>
-                            <button className={`text-[0px] w-0 ${number === 10 && 'bg-blue-500 w-[30.1px] h-[30px] text-[19.1px] justify-center flex  text-white'}`} onClick={() => setnumber(10)}>2</button>
-                            <button className={`text-[0px] w-0 ${number === 15 && 'bg-blue-500 w-[30.1px] h-[30px] text-[19.1px] justify-center flex  text-white'}`} onClick={() => setnumber(15)}>3</button>
-                            <button className={`text-[0px] w-0 ${number === 20 && 'bg-blue-500 w-[30.1px] h-[30px] text-[19.1px] justify-center flex  text-white'}`} onClick={() => setnumber(20)}>4</button>
-                            <button className={`text-[0px] w-0 ${number === 25 && 'bg-blue-500 w-[30.1px] h-[30px] text-[19.1px] justify-center flex  text-white'}`} onClick={() => setnumber(25)}>5</button>
-                            <button onClick={handlePlus}>Next</button>
-                        </div>
+            </div>
+            <div className="flex justify-between px-[20px] w-[100%] pt-4 ml-3">
+                <div className="text-[#566787]">
+                    <p>Showing {number} out of {number2} entries</p>
+                </div>
+
+                <div className="ml-80">
+                    <div className="flex gap-2">
+                        <button onClick={handleMinus}>Prevous</button>
+                        <button className={`text-[0px] w-0 ${number === 5 && 'bg-blue-500  w-[30.1px] h-[30px] text-[19.1px] justify-center flex text-white'}`} onClick={() => setnumber(5)}>1</button>
+                        <button className={`text-[0px] w-0 ${number === 10 && 'bg-blue-500 w-[30.1px] h-[30px] text-[19.1px] justify-center flex  text-white'}`} onClick={() => setnumber(10)}>2</button>
+                        <button className={`text-[0px] w-0 ${number === 15 && 'bg-blue-500 w-[30.1px] h-[30px] text-[19.1px] justify-center flex  text-white'}`} onClick={() => setnumber(15)}>3</button>
+                        <button className={`text-[0px] w-0 ${number === 20 && 'bg-blue-500 w-[30.1px] h-[30px] text-[19.1px] justify-center flex  text-white'}`} onClick={() => setnumber(20)}>4</button>
+                        <button className={`text-[0px] w-0 ${number === 25 && 'bg-blue-500 w-[30.1px] h-[30px] text-[19.1px] justify-center flex  text-white'}`} onClick={() => setnumber(25)}>5</button>
+                        <button onClick={handlePlus}>Next</button>
                     </div>
                 </div>
             </div>

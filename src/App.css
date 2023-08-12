@@ -87,6 +87,12 @@
   }
 }
 
+.container_single{
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  border: 1px solid red;
+}
 NavLink:hover {
   color: #234ce3;
 }

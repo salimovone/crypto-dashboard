@@ -5,8 +5,9 @@ import BuySell from "./views/BuySell";
 import Dashboard from "./views/Home";
 import Marketcap from "./views/Marketcap";
 import Actives from "./views/Actives";
-import View from "./views/Transactions/View-Transaction";
-import Search from "./views/Transactions/Search-Transaction";
+import View from "./views/Transactions/ViewTransaction";
+import Search from "./views/Transactions/SearchTransaction";
+import SingleTransaction from "./views/Transactions/SingleTransaction";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/activities" element={<Actives/>}/>
           <Route path="/viewTransaction" element={<View/>}/>
           <Route path="/transactionSearch" element={<Search/>}/>
+          <Route path="/singleTransaction" element={<SingleTransaction/>} />
         </Routes>
       </div>
     </div>

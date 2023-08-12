@@ -6,7 +6,7 @@ import img3 from '../../assets/img/icon/watch-icon-02.svg'
 import img4 from '../../assets/img/icon/watch-icon-01.svg'
 import img5 from '../../assets/img/icon/watch-icon-07.svg'
 import { AiOutlineDownload } from "react-icons/ai";
-import Table from '../../components/BuySell-Table'
+import Table from '../../components/BuySellTable'
 import Tables from '../../components/Table-top'
 
 function Marketcap() {

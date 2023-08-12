@@ -6,7 +6,7 @@ import { MdOutlineDashboard } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import Menus from "./data";
 
-export default ({ func }) => {
+const MainNavbar = ({ func }) => {
   const [actived, setActived] = useState(1);
   const [submenuOpen, setSubmenuOpen] = useState(-1);
   const handleClick = (id) => {
@@ -92,3 +92,5 @@ export default ({ func }) => {
     </div>
   );
 };
+
+export default MainNavbar
