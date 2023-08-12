@@ -5,7 +5,7 @@ import BuySell from "./views/BuySell";
 import Dashboard from "./views/Home";
 import Marketcap from "./views/Marketcap";
 import Actives from "./views/Actives";
-import View from "./views/Transactions/View-Transaction";
+import View from "./views/Transactions/ViewTransaction";
 import Trading from "./views/Trading/";
 import Search from "./views/Transactions/SearchTransaction";
 import SingleTransaction from "./views/Transactions/SingleTransaction";

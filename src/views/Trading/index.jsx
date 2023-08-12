@@ -1,7 +1,7 @@
 import React from "react";
 import CandleStickChart from "../../components/CandleStickChart";
 import TableTop from "../../components/Table-top";
-import Table from "../../components/BuySell-Table";
+import Table from "../../components/BuySellTable";
 import Navbar from "../../components/Navbar";
 import { AiOutlineDownload } from "react-icons/ai";
 
