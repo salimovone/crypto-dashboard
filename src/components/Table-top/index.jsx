@@ -18,10 +18,10 @@ function Table() {
                     </div>
 
                     <div>
-                        <input type="date" className="h-[40px] w-[85%] lg:w-auto bg-inherit px-8 rounded-xl border border-blue-600" />
+                        <input type="date" className="h-[40px] w-[80%] lg:w-auto bg-inherit px-8 rounded-xl border border-blue-600" />
                     </div>
                     <div>
-                        <input type="date" className="h-[40px]  w-[85%] bg-inherit px-8 rounded-xl border border-blue-600" />
+                        <input type="date" className="h-[40px]  w-[80%] bg-inherit px-8 rounded-xl border border-blue-600" />
                     </div>
 
                     <div>

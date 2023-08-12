@@ -9,9 +9,9 @@
     padding: 2%;
 }
 
-.salom::-webkit-scrollbar{
+/* .salom::-webkit-scrollbar{
     display: none;
-}
+} */
 
 .select_buySell{
     margin-top: 30px !important;
