@@ -6,6 +6,7 @@ import Dashboard from "./views/Home";
 import Marketcap from "./views/Marketcap";
 import Actives from "./views/Actives";
 import View from "./views/Transactions/View-Transaction";
+import Search from "./views/Transactions/Search-Transaction";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/marketcap" element={<Marketcap/>}/>
           <Route path="/activities" element={<Actives/>}/>
           <Route path="/viewTransaction" element={<View/>}/>
+          <Route path="/transactionSearch" element={<Search/>}/>
         </Routes>
       </div>
     </div>
