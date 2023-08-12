@@ -1,7 +1,7 @@
 import { TbArrowsExchange2 } from "react-icons/tb";
 import React, { useState } from "react";
 import './style.css'
-import Table from '../../components/BuySell-Table'
+import Table from '../../components/BuySell-table'
 import Tables from '../../components/Table-top'
 
 function BuySell() {

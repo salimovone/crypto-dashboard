@@ -6,6 +6,7 @@ import { Ul } from './style'
 import HeadBtcIndex from '../../components/HeadBtcIndex'
 import Dashchart from '../../components/DashChart'
 import ExchangeCrypto from '../../components/ExchangeCrypto'
+import HomeEarrings from '../../components/HomeEarrings'
 
 const Dashboard = () => {
   return (
@@ -21,6 +22,7 @@ const Dashboard = () => {
       </Ul>
       <Dashchart />
       <ExchangeCrypto />
+      <HomeEarrings />
     </div>
   )
 }
