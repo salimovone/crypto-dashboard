@@ -7,6 +7,9 @@ import Marketcap from "./views/Marketcap";
 import Actives from "./views/Actives";
 import View from "./views/Transactions/View-Transaction";
 import Trading from "./views/Trading/";
+import Search from "./views/Transactions/SearchTransaction";
+import SingleTransaction from "./views/Transactions/SingleTransaction";
+
 
 function App() {
   return (
@@ -20,8 +23,11 @@ function App() {
           <Route path="/buySell" element={<BuySell />} />
           <Route path="/trading" element={<Trading />} />
           <Route path="/marketcap" element={<Marketcap />} />
-          <Route path="/activities" element={<Actives />} />
-          <Route path="/viewTransaction" element={<View />} />
+          <Route path="/buySell" element={<BuySell/>}/>
+          <Route path="/activities" element={<Actives/>}/>
+          <Route path="/viewTransaction" element={<View/>}/>
+          <Route path="/transactionSearch" element={<Search/>}/>
+          <Route path="/singleTransaction" element={<SingleTransaction/>} />
         </Routes>
       </div>
     </div>

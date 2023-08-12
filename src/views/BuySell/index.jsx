@@ -1,7 +1,7 @@
 import { TbArrowsExchange2 } from "react-icons/tb";
 import React, { useState } from "react";
 import './style.css'
-import Table from '../../components/BuySell-Table'
+import Table from '../../components/BuySellTable'
 import Tables from '../../components/Table-top'
 
 function BuySell() {
@@ -26,7 +26,7 @@ function BuySell() {
                         <div className="select_buySell">
                             <div className="grid lg:grid-cols-3 gap-10 pt-5">
                                 <div>
-                                    <label for="countries" class="block mb-2 text-sm  font-medium text-gray-900 dark:text-white">Select Crypto (Min-value:0.001 BTC)</label>
+                                    <label for="countries" class="block mb-2 text-sm  font-medium text-gray-900">Select Crypto (Min-value:0.001 BTC)</label>
                                     <select id="countries" class="bg-inherit border-[3px] px-1 w-full h-[40px] border-white rounded-lg">
                                         <option selected>BTC</option>
                                         <option value="US">United States</option>
@@ -36,7 +36,7 @@ function BuySell() {
                                     </select>
                                 </div>
                                 <div>
-                                    <label for="countries" class="block mb-2 text-sm  font-medium text-gray-900 dark:text-white">
+                                    <label for="countries" class="block mb-2 text-sm  font-medium text-gray-900">
                                         BTC Choose payment method
                                     </label>
                                     <select id="countries" class="bg-inherit border-[3px] px-1 w-full h-[40px] border-white rounded-lg">
@@ -48,7 +48,7 @@ function BuySell() {
                                     </select>
                                 </div>
                                 <div>
-                                    <label for="countries" class="block mb-2 text-sm  font-medium text-gray-900 dark:text-white">Select Crypto (Min-value:0.001 BTC)</label>
+                                    <label for="countries" class="block mb-2 text-sm  font-medium text-gray-900">Select Crypto (Min-value:0.001 BTC)</label>
                                     <select id="countries" class="bg-inherit border-[3px] px-1 w-full h-[40px] border-white rounded-lg">
                                         <option selected>Accaount Password</option>
                                         <option value="US">United States</option>
@@ -61,7 +61,7 @@ function BuySell() {
 
                             <div>
                                 <div className="grid lg:grid-cols-3 lg:gap-0 gap-5 pt-10">
-                                    <div className="grid grid-cols-2 xl:w-[400px] h-auto gap-5 p-1 border-white border-[3px] rounded-2xl">
+                                    <div className="grid grid-cols-2 xl:w-full h-auto gap-5 p-1 border-white border-[3px] rounded-2xl">
                                         <div>
                                             <select id="countries" class="border-[3px] px-1 w-full h-[40px] bg-white border-white rounded-lg">
                                                 <option selected>BTC</option>
@@ -85,7 +85,7 @@ function BuySell() {
                                         </div>
                                     </div>
 
-                                    <div className="grid grid-cols-2 xl:w-[400px] gap-5 p-1 border-white rounded-2xl border-[3px]">
+                                    <div className="grid grid-cols-2 xl:w-full gap-5 p-1 border-white rounded-2xl border-[3px]">
                                         <div>
                                             <select id="countries" class="border-[3px] px-2 w-full h-[40px] bg-white border-white rounded-lg">
                                                 <option selected>BTC</option>
