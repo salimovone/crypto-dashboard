@@ -1,7 +1,7 @@
 import React from "react";
 import './style.css'
 import TableTop from '../../../components/Table-top'
-import Table from '../../../components/BuySell-table'
+import Table from '../../../components/BuySellTable'
 
 function View() {
     return (

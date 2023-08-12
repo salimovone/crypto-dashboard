@@ -1,6 +1,5 @@
 import { CgClose } from "react-icons/cg";
 import React from "react";
-import '../Marketcap/style.css'
 import { useDispatch, useSelector } from "react-redux";
 import { deleteUsers } from "../../redux/activities/activesReducer";
 
