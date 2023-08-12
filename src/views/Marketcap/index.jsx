@@ -1,4 +1,3 @@
-import './style.css'
 import React, { useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import img1 from '../../assets/img/icon/watch-icon-08.svg'

@@ -36,7 +36,7 @@ const initialState = {
             method: 'Visa',
             img: img3,
             amount: '$ 63,391,183,730',
-            time: `15 May 2022 0`,
+            time: `15 May 2022`,
             statuss: 'Pending', 
             time2: '05:30 AM'
         },
@@ -47,7 +47,7 @@ const initialState = {
             method: 'Credit',
             img: img4,
             amount: '$ 10,901,285,520',
-            time: `15 May 2022  0`,
+            time: `15 May 2022 `,
             statuss: 'Pending',
             time2: '05:30 AM'
         },
@@ -79,9 +79,13 @@ export const tableSlice = createSlice({
             newValue[index] = action.payload;
 
             state.users = newValue
+        },
+
+        addUsers: (state, action) => {
+            state.users = [state.users, action.payload]
         }
     }
 })
 
-export const {deleteUsers, updateUsers} = tableSlice.actions
+export const {deleteUsers, updateUsers, addUsers} = tableSlice.actions
 export default tableSlice.reducer

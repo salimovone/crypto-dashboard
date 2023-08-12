@@ -1,3 +1,6 @@
+import { AiFillCloseCircle } from "react-icons/ai";
+import { AiFillDelete } from "react-icons/ai";
+import { BiEditAlt } from "react-icons/bi";
 import { TbArrowsDownUp } from "react-icons/tb";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -6,7 +9,7 @@ import { useFormik } from "formik";
 import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { CiMenuKebab } from 'react-icons/ci'
-import { deleteUsers, updateUsers } from "../../redux/table/tableReducer";
+import { addUsers, deleteUsers, updateUsers } from "../../redux/table/tableReducer";
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -78,6 +81,7 @@ function BuySell() {
         onSubmit: values => {
             if (edit.type) {
                 const payload = {
+                    // img:,
                     idNo: values.idNo,
                     type: values.type,
                     amount: values.amount,
@@ -87,7 +91,7 @@ function BuySell() {
                     time: values.time
                 }
                 dispatch(updateUsers(payload))
-            } else {
+            }else {
                 const payload = {
                     idNo: values.idNo,
                     type: values.type,
@@ -97,8 +101,9 @@ function BuySell() {
                     id: values.id,
                     time: values.time
                 }
-                dispatch(deleteUsers(payload))
+                dispatch(addUsers(payload))
             }
+            
             formik.resetForm()
             setEdit({ type: false, data: null })
             setModal(false)
@@ -107,104 +112,115 @@ function BuySell() {
 
     return (
         <>
-            <div className={`${open ? 'bggg h-[100%]  w-[100%] z-[10000000] flex justify-center items-center' : 'hidden'}`}>
+            <div className={`${open ? 'top-0 left-0 h-[100%]  w-[100%]  absolute  z-50 flex justify-center items-center' : 'hidden'}`}>
                 <div>
-                    <div className="w-[300px] h-[200px] bg-white text-center flex justify-center items-center">
+                    <div className="w-[300px] h-[150px] bg-white rounded-lg shadow-lg text-center flex justify-center items-center">
                         <div>
                             <p className="-mt-2 text-[30px]">Are You Sure?</p>
 
                             <div className="flex gap-5 mt-5 ml-5">
-                                <button onClick={() => { handleDelete() }} className="text-red-700 font-semibold text-2xl">Ok</button>
-                                <button onClick={() => setOpen(false)} className="text-green-500 font-semibold text-2xl">Cancel</button>
+                                <button onClick={() => { handleDelete() }} className="text-white py-[8px] px-[30px] bg-[#234ce3] rounded-lg font-semibold text-2xl">Ok</button>
+                                <button onClick={() => setOpen(false)} className="text-[#234ce3] font-semibold text-2xl">Cancel</button>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className={modal ? "w-[100%] h-[100%] bg-white z-[1000000] flex justify-center" : "hidden"}>
-                <div>
-                    <form onSubmit={formik.handleSubmit} className='bg-white p-10'>
+            <div className={modal ? "w-[100%] h-[100%] z-50 absolute top-0  flex justify-center items-center left-0" : "hidden"}>
+                <div className="bg-white rounded-lg">
+                    <form onSubmit={formik.handleSubmit} className='bg-white p-10 rounded-lg shadow-lg'>
+                        <div className="flex justify-end">
+                            <button className="text-red-500 text-[25px] -mt-5 pb-5" onClick={() => setModal(false)}><AiFillCloseCircle /></button>
+                        </div>
+                        <div className="flex justify-between gap-5">
+                            <div>
+                                <label htmlFor="">ID NO:</label>
+                                <input
+                                    id="idNo"
+                                    name="idNo"
+                                    className='border rounded-lg py-2 px-4 block border-[#234ce3]'
+                                    type="text"
+                                    placeholder='ID NO'
+                                    onChange={formik.handleChange}
+                                    value={formik.values.idNo}
+                                    required
+                                />
 
-                        <label htmlFor="">ID NO:</label>
-                        <input
-                            id="idNo"
-                            name="idNo"
-                            className='border-2 py-2 px-4 block border-red-500'
-                            type="text"
-                            placeholder='ID NO'
-                            onChange={formik.handleChange}
-                            value={formik.values.idNo}
-                            required
-                        />
+                                <label htmlFor="" className="mt-5 pt-5">Currency Type:</label>
+                                <input
+                                    id="type"
+                                    name="type"
+                                    className='border rounded-lg py-2 px-4 block border-[#234ce3]'
+                                    type="text"
+                                    placeholder='Currency Type'
+                                    onChange={formik.handleChange}
+                                    value={formik.values.type}
+                                    required
+                                />
 
-                        <label htmlFor="" className="mt-5 pt-5">Currency Type:</label>
-                        <input
-                            id="type"
-                            name="type"
-                            className='border-2 py-2 px-4 block border-red-500'
-                            type="text"
-                            placeholder='Currency Type'
-                            onChange={formik.handleChange}
-                            value={formik.values.type}
-                            required
-                        />
+                                <label htmlFor="" className="mt-3">Payment Medhod:</label>
+                                <input
+                                    id="method"
+                                    name="method"
+                                    className='border rounded-lg py-2 px-4 block border-[#234ce3]'
+                                    type="text"
+                                    placeholder='Payment Medhod'
+                                    onChange={formik.handleChange}
+                                    required
+                                    value={formik.values.method}
+                                />
+                            </div>
 
-                        <label htmlFor="" className="mt-3">Payment Medhod:</label>
-                        <input
-                            id="method"
-                            name="method"
-                            className='border-2 py-2 px-4 block border-red-500'
-                            type="text"
-                            placeholder='Payment Medhod'
-                            onChange={formik.handleChange}
-                            required
-                            value={formik.values.method}
-                        />
+                            <div> <label htmlFor="" className="mt-3">Trade Time:</label>
+                                <input
+                                    id="time"
+                                    name="time"
+                                    className='border rounded-lg py-2 px-4 block border-[#234ce3]'
+                                    type="text"
+                                    placeholder='Trade Time'
+                                    onChange={formik.handleChange}
+                                    required
+                                    value={formik.values.time}
+                                />
 
-                        <label htmlFor="" className="mt-3">Trade Time:</label>
-                        <input
-                            id="time"
-                            name="time"
-                            className='border-2 py-2 px-4 block border-red-500'
-                            type="text"
-                            placeholder='Trade Time'
-                            onChange={formik.handleChange}
-                            required
-                            value={formik.values.time}
-                        />
+                                <label htmlFor="" className="mt-3">Amount:</label>
+                                <input
+                                    id="amount"
+                                    name="amount"
+                                    className='border rounded-lg py-2 px-4 block border-[#234ce3]'
+                                    type="text"
+                                    placeholder='Amount'
+                                    onChange={formik.handleChange}
+                                    value={formik.values.amount}
+                                    required
+                                />
 
-                        <label htmlFor="" className="mt-3">Amount:</label>
-                        <input
-                            id="amount"
-                            name="amount"
-                            className='border-2 py-2 px-4 block border-red-500'
-                            type="text"
-                            placeholder='Amount'
-                            onChange={formik.handleChange}
-                            value={formik.values.amount}
-                            required
-                        />
-
-                        <label htmlFor="" className="mt-3">Status:</label>
-                        <input
-                            id="statuss"
-                            name="statuss"
-                            className='border-2 py-2 px-4 block border-red-500'
-                            type="text"
-                            placeholder='Status'
-                            onChange={formik.handleChange}
-                            required
-                            value={formik.values.statuss}
-                        />
-
-                        <button type="submit" className='bg-green-700 py-2 px-10 text-white font-medium mt-10'>Submit</button>
+                                <label htmlFor="" className="mt-3">Status:</label>
+                                <input
+                                    id="statuss"
+                                    name="statuss"
+                                    className='border rounded-lg py-2 px-4 block border-[#234ce3]'
+                                    type="text"
+                                    placeholder='Status'
+                                    onChange={formik.handleChange}
+                                    required
+                                    value={formik.values.statuss}
+                                />
+                            </div>
+                        </div>
+                        <div className="flex justify-end">
+                            <button type="submit" className='bg-[#234ce3] rounded-lg py-2 px-10 text-white font-medium mt-10'>Submit</button>
+                        </div>
                     </form>
                 </div>
             </div>
 
-            <div class="relative overflow-x-scroll salom sm:rounded-lg h-full mt-14">
+            {/* <div>
+            <button className='mt-5 bg-green-600 -mb-5 py-2 px-10 rounded-lg text-white font-semibold' onClick={() => handldkls()}>Add user</button>
+            </div> */}
+
+            <div class="relative overflow-x-scroll salom sm:rounded-lg h-full mt-14 z-30">
                 <table class="w-[100%] text-sm text-left ">
                     <thead class="text-md text-[#35446F] uppercase bg-inherit pb-10">
                         <tr>
@@ -237,8 +253,8 @@ function BuySell() {
                     <tbody className="border shadow-md h-full">
                         {
                             user.map((item) => (
-                                <tr class="border-y dark:bg-gray-900 text-black dark:border-gray-700" key={item.id}>
-                                    <th scope="row" class="px-4 py-4 font-medium text-blue-700 whitespace-nowrap dark:text-white">
+                                <tr class="border-y " key={item.id}>
+                                    <th scope="row" class="px-4 py-4 font-medium text-blue-700 whitespace-nowrap">
                                         {item.idNo}
                                     </th>
                                     <td class="px-6 py-6 text-black text-[18px] flex gap-1">
@@ -283,11 +299,11 @@ function BuySell() {
                                                                 <div
                                                                     className={classNames(
                                                                         active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                                                                        'block px-4 py-2 text-sm'
+                                                                        'flex px-4 py-2 text-sm gap-1'
                                                                     )}
                                                                     onClick={() => updateUser(item)}
                                                                 >
-                                                                    Edit
+                                                                    <BiEditAlt className="mt-1" />Edit
                                                                 </div>
                                                             )}
                                                         </Menu.Item>
@@ -296,11 +312,11 @@ function BuySell() {
                                                                 <div
                                                                     className={classNames(
                                                                         active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                                                                        'block px-4 py-2 text-sm'
+                                                                        'flex gap-1 px-4 py-2 text-sm'
                                                                     )}
                                                                     onClick={() => { setOpen(item.id) }}
                                                                 >
-                                                                    Delete
+                                                                    <AiFillDelete className="mt-1" />Delete
                                                                 </div>
                                                             )}
                                                         </Menu.Item>
