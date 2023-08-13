@@ -1,14 +1,15 @@
 import React from "react";
-import { Main, Right } from "./style";
-import BuySell from "../BuySell-table";
+import { Left, Main, Right } from "./style";
+import BuySell from "../BuySellTable";
 import Button from "../Button";
+
 
 const HomeEarrings = () => {
   return (
-    <Main>
-      <div className="w-full overflow-x-scroll">
+    <Main className="w-full">
+      <Left className="w-600px overflow-x-scroll">
         <BuySell />
-      </div>
+      </Left>
       <Right className="w-full">
         <div className="balance">
           <div>
@@ -38,7 +39,9 @@ const HomeEarrings = () => {
             <p className="text-[14px] text-[#171717]">New Users</p>
           </div>
 
-          <div></div>
+          <div>
+            
+          </div>
         </div>
       </Right>
     </Main>
