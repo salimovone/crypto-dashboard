@@ -2,6 +2,7 @@ import { CgClose } from "react-icons/cg";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteUsers } from "../../redux/activities/activesReducer";
+import Navbar from "../../components/Navbar";
 
 function Actives() {
 
@@ -15,7 +16,8 @@ function Actives() {
 
     return (
         <>
-            <div className="w-full p-10 mt-5">
+        <Navbar/>
+            <div className="w-full p-10">
                 <div>
                     <div className="text-[24px] text-[#35446F] font-bold">Activities</div>
                     <div className="mt-10">
