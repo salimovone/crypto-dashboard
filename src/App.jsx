@@ -10,7 +10,6 @@ import Trading from "./views/Trading/";
 import Search from "./views/Transactions/SearchTransaction";
 import SingleTransaction from "./views/Transactions/SingleTransaction";
 
-
 function App() {
   return (
     <div className="App ">
@@ -23,11 +22,11 @@ function App() {
           <Route path="/buySell" element={<BuySell />} />
           <Route path="/trading" element={<Trading />} />
           <Route path="/marketcap" element={<Marketcap />} />
-          <Route path="/buySell" element={<BuySell/>}/>
-          <Route path="/activities" element={<Actives/>}/>
-          <Route path="/viewTransaction" element={<View/>}/>
-          <Route path="/transactionSearch" element={<Search/>}/>
-          <Route path="/singleTransaction" element={<SingleTransaction/>} />
+          <Route path="/buySell" element={<BuySell />} />
+          <Route path="/activities" element={<Actives />} />
+          <Route path="/viewTransaction" element={<View />} />
+          <Route path="/transactionSearch" element={<Search />} />
+          <Route path="/singleTransaction" element={<SingleTransaction />} />
         </Routes>
       </div>
     </div>
