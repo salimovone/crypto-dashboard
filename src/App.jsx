@@ -9,6 +9,7 @@ import View from "./views/Transactions/ViewTransaction";
 import Trading from "./views/Trading/";
 import Search from "./views/Transactions/SearchTransaction";
 import SingleTransaction from "./views/Transactions/SingleTransaction";
+import Email from "./views/Email";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path="/viewTransaction" element={<View/>}/>
           <Route path="/transactionSearch" element={<Search/>}/>
           <Route path="/singleTransaction" element={<SingleTransaction/>} />
+          <Route path="/email" element={<Email />} />
         </Routes>
       </div>
     </div>
