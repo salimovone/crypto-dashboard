@@ -18,7 +18,7 @@ export default () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative ">
       <div
         className={`Main_Navbar block lg:hidden  overflow-y-scroll top-0 left-0 bg-[#f0f5ff] w-[300px] fixed
         h-screen z-50 ${open ? "block" : "hidden"}`}

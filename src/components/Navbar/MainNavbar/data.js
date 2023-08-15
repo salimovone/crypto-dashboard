@@ -28,7 +28,7 @@ const Menus = [
   {
     title: "Marketcap",
     icon: <AiOutlineBarChart />,
-    link: "marketcap",
+    link: "/marketcap",
   },
   {
     title: "Transaction",

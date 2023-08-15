@@ -1,7 +1,7 @@
 import { BiLogOut } from "react-icons/bi";
 import { AiOutlineRight } from "react-icons/ai";
 import { BiChevronLeft } from "react-icons/bi";
-import { useState } from "react";
+import React, { useState, Fragment } from "react";
 import { MdOutlineDashboard } from "react-icons/md";
 import Logo from "../../assets/img/logo-icon.png";
 import { NavLink, useNavigate } from "react-router-dom";
@@ -53,7 +53,7 @@ const SideBar = () => {
       <ul className="pt-2 flex flex-col mt-[30px] gap-[10px]">
         {Menus.map((menu, index) => {
           return (
-            <>
+            <Fragment key={index}>
               <NavLink
                 className={`${
                   actived === index + 1
@@ -120,7 +120,7 @@ const SideBar = () => {
               ) : (
                 <></>
               )}
-            </>
+            </Fragment>
           );
         })}
       </ul>

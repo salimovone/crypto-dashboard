@@ -93,4 +93,4 @@ const MainNavbar = ({ func }) => {
   );
 };
 
-export default MainNavbar
+export default MainNavbar;
