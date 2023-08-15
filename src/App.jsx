@@ -11,7 +11,6 @@ import Search from "./views/Transactions/SearchTransaction";
 import SingleTransaction from "./views/Transactions/SingleTransaction";
 import Email from "./views/Email";
 
-
 function App() {
   return (
     <div className="App ">

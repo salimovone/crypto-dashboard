@@ -2,10 +2,12 @@ import React from "react";
 import './style.css'
 import TableTop from '../../../components/Table-top'
 import Table from '../../../components/BuySellTable'
+import Navbar from "../../../components/Navbar";
 
 function View() {
     return (
         <>
+        <Navbar/>
             <div className="container_viewTransaction">
                 <div>
                     <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-5">
