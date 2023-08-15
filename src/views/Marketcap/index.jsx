@@ -8,6 +8,7 @@ import img5 from '../../assets/img/icon/watch-icon-07.svg'
 import { AiOutlineDownload } from "react-icons/ai";
 import Table from '../../components/BuySellTable'
 import Tables from '../../components/Table-top'
+import Navbar from '../../components/Navbar';
 
 function Marketcap() {
 
@@ -25,11 +26,12 @@ function Marketcap() {
 
     return (
         <>
-            <div className="w-full flex justify-center items-center mt-16">
+            <Navbar/>
+            <div className="w-full flex justify-center items-center">
                 <div className="container_market">
                     <div>
                         <div className='container2'>
-                            <div className='grid grid-cols-1 gap-5 lg:grid-cols-3 xl:ml-9 xl:gap-32 lg:gap-10'>
+                            <div className='grid md:grid-cols-2 grid-cols-1 gap-5 px-10 xl:px-0 lg:grid-cols-3 xl:ml-8 xl:gap-32 lg:gap-10'>
                                 <div>
                                     <p className='text-[20px] font-medium text-[#35446F]'>Market Cap</p>
                                 </div>
@@ -61,7 +63,7 @@ function Marketcap() {
                                     </div>
                                 </div>
                             </div>
-                            <ResponsiveContainer width={"100%"} height={370} className="xl:-ml-5 mt-10">
+                            <ResponsiveContainer width={"100%"} height={370} className="xl:-ml-5 lg:-ml-4 md:-ml-3 -ml-4 mt-10">
                                 <LineChart
                                     width={600}
                                     height={400}

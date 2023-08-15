@@ -11,6 +11,7 @@ import Search from "./views/Transactions/SearchTransaction";
 import SingleTransaction from "./views/Transactions/SingleTransaction";
 import Wallet from "./views/Wallet";
 import Settings from "./views/Settings";
+import Email from "./views/Email";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/singleTransaction" element={<SingleTransaction />} />
           <Route path="/wallet" element={<Wallet />} />
           <Route path="/settings" element={<Settings />} />
+          <Route path="/email" element={<Email />} />
         </Routes>
       </div>
     </div>

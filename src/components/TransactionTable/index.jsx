@@ -85,7 +85,6 @@ export default () => {
                     </tbody>
                 </table>
             </div>
-
         </>
     )
 }

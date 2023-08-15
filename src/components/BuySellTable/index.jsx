@@ -111,7 +111,7 @@ function BuySell() {
     });
 
     return (
-        <>
+        <div className="w-max">
             <div className={`${open ? 'top-0 left-0 h-[100%]  w-[100%]  absolute  z-50 flex justify-center items-center' : 'hidden'}`}>
                 <div>
                     <div className="w-[300px] h-[150px] bg-white rounded-lg shadow-lg text-center flex justify-center items-center">
@@ -221,7 +221,7 @@ function BuySell() {
             </div> */}
 
             <div class="relative  overflow-x-scroll  xl:overflow-x-hidden sm:rounded-lg  h-full mt-14 z-30">
-                <table class="w-[1100px] xl:w-[100%] text-sm text-left overflow-x-scroll">
+                <table class="w-[1100px] xl:w-[1220px] text-sm text-left overflow-x-scroll">
                     <thead class="text-md text-[#35446F] uppercase bg-inherit pb-10">
                         <tr>
                             <th scope="col" class="px-4 py-3">
@@ -332,15 +332,14 @@ function BuySell() {
                         }
                     </tbody>
                 </table>
-
-
             </div>
-            <div className="flex justify-between px-[20px] w-[100%] pt-4 ml-3">
+
+            <div className="flex flex-wrap justify-between px-[20px] w-[100%] pt-4 md:ml-3">
                 <div className="text-[#566787]">
                     <p>Showing {number} out of {number2} entries</p>
                 </div>
 
-                <div className="ml-80">
+                <div className="md:ml-80">
                     <div className="flex gap-2">
                         <button onClick={handleMinus}>Prevous</button>
                         <button className={`text-[0px] w-0 ${number === 5 && 'bg-blue-500  w-[30.1px] h-[30px] text-[19.1px] justify-center flex text-white'}`} onClick={() => setnumber(5)}>1</button>
@@ -352,7 +351,7 @@ function BuySell() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

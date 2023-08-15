@@ -2,12 +2,14 @@ import { AiOutlineCheckCircle } from "react-icons/ai";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import React from 'react'
 import TransactionTable from "../../../components/TransactionTable";
+import Navbar from "../../../components/Navbar";
 
 function Search() {
 
     return (
         <>
-            <div className='container_search mt-16'>
+        <Navbar/>
+            <div className='container_search '>
                 <div>
                     <p className='text-[22px] font-semibold text-[#35446F]'>Search for: Transactions</p>
                 </div>
