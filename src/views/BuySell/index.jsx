@@ -3,13 +3,15 @@ import React, { useState } from "react";
 import './style.css'
 import Table from '../../components/BuySellTable'
 import Tables from '../../components/Table-top'
+import Navbar from "../../components/Navbar";
 
 function BuySell() {
     const [bgbottom, setBgbottom] = useState('actives')
 
     return (
         <>
-            <div className="w-full xl:w-auto flex justify-center pt-16 overflow-hidden">
+        <Navbar/>
+            <div className="w-full xl:w-auto flex justify-center overflow-hidden">
                 <div className="container_buySell">
                     <div>
                         <div>
