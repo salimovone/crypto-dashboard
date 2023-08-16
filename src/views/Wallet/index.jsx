@@ -4,6 +4,8 @@ import Head from "../../components/Wallet/Head";
 import Transfer from "../../components/Wallet/Transfer";
 import Wallets from "../../components/Wallet/Wallet";
 import WalletTransaction from "../../components/Wallet/Transaction";
+import Tablettop from "../../components/Table-top";
+import BuySellTable from "../../components/BuySellTable";
 
 const Wallet = () => {
   return (
@@ -13,6 +15,8 @@ const Wallet = () => {
       <Wallets />
       <Transfer />
       <WalletTransaction />
+      <Tablettop />
+      <BuySellTable />
     </div>
   );
 };
