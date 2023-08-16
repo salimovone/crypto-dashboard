@@ -111,7 +111,7 @@ function BuySell() {
     });
 
     return (
-        <div className="w-max">
+        <div className="w-max p-14 bg-red-500">
             <div className={`${open ? 'top-0 left-0 h-[100%]  w-[100%]  absolute  z-50 flex justify-center items-center' : 'hidden'}`}>
                 <div>
                     <div className="w-[300px] h-[150px] bg-white rounded-lg shadow-lg text-center flex justify-center items-center">
