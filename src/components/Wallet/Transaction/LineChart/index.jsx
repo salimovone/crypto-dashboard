@@ -5,16 +5,12 @@ const ColChart = () => {
   let chartData = {
     series: [
       {
-        name: "Net Profit",
+        name: "Deposit",
         data: [44, 55, 57, 56, 61, 58, 63, 60, 66],
       },
       {
-        name: "Revenue",
+        name: "WithDraw",
         data: [76, 85, 101, 98, 87, 105, 91, 114, 94],
-      },
-      {
-        name: "Free Cash Flow",
-        data: [35, 41, 36, 26, 45, 48, 52, 53, 41],
       },
     ],
     options: {
@@ -25,7 +21,7 @@ const ColChart = () => {
       plotOptions: {
         bar: {
           horizontal: false,
-          columnWidth: "55%",
+          columnWidth: "20%",
           endingShape: "rounded",
         },
       },
@@ -57,6 +53,12 @@ const ColChart = () => {
       },
       fill: {
         opacity: 1,
+        colors: ["rgb(13, 191, 10)", "rgb(254, 63, 81)"],
+      },
+      markers: {
+        style: {
+          colors: ["rgb(13, 191, 10)", "rgb(254, 63, 81)"],
+        },
       },
       tooltip: {
         y: {

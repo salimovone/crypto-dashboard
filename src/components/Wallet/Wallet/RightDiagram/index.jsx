@@ -1,52 +1,21 @@
-import React, { PureComponent } from "react";
-import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from "recharts";
+import React from "react";
+import { Diagram } from "../LeftDiagram/style";
 
-const data = [
-  { name: "Group A", value: 60 },
-  { name: "Group B", value: 40 },
-
-  ,
-];
-const COLORS = ["#fe3f51", "#fff"];
-
-export default class Example extends PureComponent {
-  static demoUrl =
-    "https://codesandbox.io/s/pie-chart-with-padding-angle-7ux0o";
-
-  render() {
-    return (
-      <PieChart width={800} height={400} onMouseEnter={this.onPieEnter}>
-        <Pie
-          data={data}
-          cx={120}
-          cy={200}
-          innerRadius={60}
-          outerRadius={80}
-          fill="#8884d8"
-          paddingAngle={5}
-          dataKey="value"
-        >
-          {data.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-          ))}
-        </Pie>
-        <Pie
-          data={data}
-          cx={420}
-          cy={200}
-          startAngle={180}
-          endAngle={0}
-          innerRadius={60}
-          outerRadius={80}
-          fill="#8884d8"
-          paddingAngle={5}
-          dataKey="value"
-        >
-          {data.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-          ))}
-        </Pie>
-      </PieChart>
-    );
-  }
-}
+const Rightpie = () => {
+  return (
+    <div>
+      <div className="">
+        <Diagram color={"#fe3f51"}>
+          <div className="text-xl font-semibold">66%</div>
+        </Diagram>
+        <div>
+          <p className="text-sm text-center">Main Limits</p>
+          <p className="text-md text-[#fe3f51] font-bold text-center">
+            $10,000
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+export default Rightpie;
