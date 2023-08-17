@@ -1,3 +1,4 @@
+import { BiDotsHorizontalRounded } from "react-icons/bi";
 import { IoIosClose } from "react-icons/io";
 import React from "react";
 import { AiOutlineRight } from "react-icons/ai";
@@ -7,12 +8,11 @@ import { NavLink } from "react-router-dom";
 import Menus from "./data";
 
 const MainNavbar = ({ func }) => {
-  const [actived, setActived] = useState(1);
   const [submenuOpen, setSubmenuOpen] = useState(-1);
   const handleClick = (id) => {
     handleOpen(id);
-    setActived(id + 1);
   };
+
   const handleOpen = (id) => {
     if (submenuOpen === id) {
       setSubmenuOpen(-1);
@@ -32,14 +32,10 @@ const MainNavbar = ({ func }) => {
           return (
             <>
               <NavLink
-                className={`${
-                  actived === index + 1
-                    ? "text-[#234ce3] bg-[#ffffff1a] Shadow px-[15px] rounded-lg py-[10px]"
-                    : "text-[#161616] px-[15px] py-[10px]"
-                }`}
                 onClick={() => {
                   handleClick(index);
                 }}
+                className="text-[#161616] px-[15px] py-[10px]"
                 to={menu.link}
                 key={index}
               >
@@ -72,8 +68,9 @@ const MainNavbar = ({ func }) => {
                             <NavLink
                               to={item.link}
                               key={index}
-                              className={` ml-[50px] text-md font-medium  `}
+                              className={` ml-[50px] text-md font-medium flex items-center `}
                             >
+                              <BiDotsHorizontalRounded />
                               {item.title}
                             </NavLink>
                           );
