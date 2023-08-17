@@ -117,3 +117,6 @@ NavLink:hover {
 .Shadow {
   box-shadow: 0 4px 9px #e1ecff, inset 0 0 15px rgba(255, 255, 255, 0.35);
 }
+.employee_table td {
+  padding: 15px 20px;
+}

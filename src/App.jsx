@@ -12,6 +12,8 @@ import SingleTransaction from "./views/Transactions/SingleTransaction";
 import Wallet from "./views/Wallet";
 import Settings from "./views/Settings";
 import Email from "./views/Email";
+import EmployeeList from "./views/Employee/EmployeeList";
+import AddEmployee from "./components/Employee/AddEmployee";
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
           <Route path="/transactionSearch" element={<Search />} />
           <Route path="/singleTransaction" element={<SingleTransaction />} />
           <Route path="/wallet" element={<Wallet />} />
+          <Route path="/employeesList" element={<EmployeeList />} />
+          <Route path="/addEmployee" element={<AddEmployee />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/email" element={<Email />} />
         </Routes>

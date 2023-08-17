@@ -18,7 +18,7 @@ const SideBar = () => {
   };
   const handleClick = (id) => {
     handleOpen(id);
-    setActived(id + 1);
+    setActived(id + 2);
   };
   const handleOpen = (id) => {
     if (submenuOpen === id) {
@@ -56,7 +56,7 @@ const SideBar = () => {
             <Fragment key={index}>
               <NavLink
                 className={`${
-                  actived === index + 1
+                  actived === index + 2
                     ? "text-[#234ce3] bg-[#ffffff1a] Shadow px-[15px] rounded-lg py-[10px]"
                     : "text-[#161616] px-[15px] py-[10px]"
                 }`}
