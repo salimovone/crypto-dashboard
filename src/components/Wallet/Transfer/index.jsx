@@ -71,7 +71,7 @@ const Transfer = () => {
             <br /> eiusmod tempor incididunt ut
           </div>
           <div>
-            <button className="w-[219px] h-[46px] rounded-lg bg-[#234ce3] text-sm text-white font-semibold">
+            <button className="w-[219px] h-[46px] rounded-lg bg-[#234ce3] transition-all hover:bg-[#fe3f51] text-sm text-white font-semibold">
               Transfer Now
             </button>
           </div>

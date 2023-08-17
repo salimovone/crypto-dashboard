@@ -39,7 +39,7 @@ export const walletSlice = createSlice({
     },
 
     addWallet: (state, action) => {
-      state.wallets = [state.wallets, action.payload];
+      state.wallets = [...state.wallets, action.payload];
     },
   },
 });

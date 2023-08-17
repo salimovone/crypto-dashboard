@@ -5,6 +5,8 @@ import { useFormik } from "formik";
 import { addWallet, updateWallet } from "../../../redux/wallet/walletReducer";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { BiWallet } from "react-icons/bi";
+import LeftPie from "./LeftDiagram";
+import Rightpie from "./RightDiagram";
 
 export default () => {
   const wallet = useSelector((state) => state.wallet.wallets);
@@ -14,10 +16,10 @@ export default () => {
   const [edit, setEdit] = useState({ type: false, data: null });
   const [modal, setModal] = useState(false);
 
-  // const updateUser = (demo) => {
-  //   setModal(true);
-  //   setEdit({ type: true, data: demo });
-  // };
+  const updateUser = (demo) => {
+    setModal(true);
+    setEdit({ type: true, data: demo });
+  };
 
   useEffect(() => {
     if (edit.type) {
@@ -38,29 +40,28 @@ export default () => {
         "linear-gradient(51.64deg,rgba(255,255,255,0) 34.2%,rgba(255,255,255,0.05) 97.35%,rgba(255,255,255,0) 160.66%),#234CE3",
     },
     onSubmit: (values) => {
-      // if (edit.type) {
-      //   const payload = {
-      //     balance: values.balance,
-      //     validTHRU: values.validTHRU,
-      //     holder: values.holder,
-      //     bgColor:
-      //       "linear-gradient(51.64deg,rgba(255,255,255,0) 34.2%,rgba(255,255,255,0.05) 97.35%,rgba(255,255,255,0) 160.66%),#234CE3",
-      //   };
-      //   dispatch(updateWallet(payload));
-      // } else {
-      const payload = {
-        id: Date.now(),
-        balance: values.balance,
-        validTHRU: values.validTHRU,
-        holder: values.holder,
-        bgColor:
-          "linear-gradient(51.64deg,rgba(255,255,255,0) 34.2%,rgba(255,255,255,0.05) 97.35%,rgba(255,255,255,0) 160.66%),#234CE3",
-      };
-      dispatch(addWallet(payload));
-      // }
+      if (edit.type) {
+        const payload = {
+          balance: values.balance,
+          validTHRU: values.validTHRU,
+          holder: values.holder,
+          bgColor: values.bgColor,
+        };
+        dispatch(updateWallet(payload));
+      } else {
+        const payload = {
+          id: Date.now(),
+          balance: values.balance,
+          validTHRU: values.validTHRU,
+          holder: values.holder,
+          bgColor:
+            "linear-gradient(51.64deg,rgba(255,255,255,0) 34.2%,rgba(255,255,255,0.05) 97.35%,rgba(255,255,255,0) 160.66%),#234CE3",
+        };
+        dispatch(addWallet(payload));
+      }
 
       formik.resetForm();
-      // setEdit({ type: false, data: null });
+      setEdit({ type: false, data: null });
       setModal(false);
     },
   });
@@ -148,7 +149,7 @@ export default () => {
             {wallet.map((item) => (
               <div
                 key={item.id}
-                className="p-[20px] w-full rounded-lg"
+                className="p-[20px] pb-3 w-full rounded-lg"
                 style={{
                   background: item.bgColor,
                   boxShadow:
@@ -190,8 +191,12 @@ export default () => {
             ))}
           </div>
           <div className="flex gap-5 flex-col xl:flex-row">
-            <div className="p-5 transaction_card w-full flex justify-center"></div>
-            <div className="p-5 transaction_card w-full flex justify-center"></div>
+            <div className="p-5 transaction_card w-full flex justify-center">
+              <LeftPie />
+            </div>
+            <div className="p-5 transaction_card w-full flex justify-center">
+              <Rightpie />
+            </div>
           </div>
         </div>
       </div>
