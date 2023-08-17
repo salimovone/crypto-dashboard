@@ -81,7 +81,6 @@ function BuySell() {
         onSubmit: values => {
             if (edit.type) {
                 const payload = {
-                    // img:,
                     idNo: values.idNo,
                     type: values.type,
                     amount: values.amount,
@@ -216,11 +215,7 @@ function BuySell() {
                 </div>
             </div>
 
-            {/* <div>
-            <button className='mt-5 bg-green-600 -mb-5 py-2 px-10 rounded-lg text-white font-semibold' onClick={() => handldkls()}>Add user</button>
-            </div> */}
-
-            <div class="relative  overflow-x-scroll  xl:overflow-x-hidden sm:rounded-lg  h-full mt-14 z-30">
+            <div class="relative overflow-x-scroll  xl:overflow-x-hidden sm:rounded-lg  h-full mt-14 z-30">
                 <table class="w-[1100px] xl:w-[1220px] text-sm text-left overflow-x-scroll">
                     <thead class="text-md text-[#35446F] uppercase bg-inherit pb-10">
                         <tr>
