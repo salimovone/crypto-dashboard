@@ -36,6 +36,8 @@ import Expences from "./views/Accounts/Expences";
 import ProvidentFund from "./views/Accounts/Provident Fund";
 import EmloyeeSolory from "./views/Payrroll/EmloyeeSolory";
 import Payslip from "./views/Payrroll/Payslip";
+import ExpenceReport from "./views/Reports/ExpenceReport";
+import InvoiceReport from "./views/Reports/InvoiceReport";
 
 function App() {
   return (
@@ -90,6 +92,8 @@ function App() {
           <Route path="/providentFunt" element={<ProvidentFund/>} />
           <Route path="/employeeSalary" element={<EmloyeeSolory/>}/>
           <Route path="/payslip" element={<Payslip/>}/>
+          <Route path="/expenseReport" element={<ExpenceReport/>} />
+          <Route path="/invoiceReport" element={<InvoiceReport/>} />
         </Routes>
       </div>
     </div>
