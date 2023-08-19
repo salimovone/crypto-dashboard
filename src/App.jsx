@@ -23,6 +23,10 @@ import Register from "./views/Pages/Register";
 import LookScreen from "./views/Pages/LookScreen";
 import ChangePassword from "./views/Pages/ChangePassword";
 import Profile from "./views/Pages/Profile";
+import Payments from "./views/Accounts/Payments";
+import Invoices from "./views/Accounts/Invoices";
+import Taxes from "./views/Accounts/Taxes";
+import AddUsers from "./components/Accounts/AddUsers";
 import Leaves from "./components/Employee/Leaves";
 import AddLeave from "./components/Employee/AddLeave";
 import Holiday from "./components/Employee/Holiday";
@@ -56,6 +60,19 @@ function App() {
           <Route path="/attendance" element={<Attendance />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/email" element={<Email />} />
+          <Route path="/typiconIcons" element={<Blank/>} />
+          <Route path="/error500" element={<Page1/>} />
+          <Route path="/error404" element={<Eror404/>}/>
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/forgotPassword" element={<Forget/>}/>
+          <Route path="/register" element={<Register/>}/>
+          <Route path="/lockScreen" element={<LookScreen/>}/>
+          <Route path="/changePassword" element={<ChangePassword/>} />
+          <Route path="/profile" element={<Profile/>}/>
+          <Route path="/payments" element={<Payments/>}/>
+          <Route path="/invoices" element={<Invoices/>} />
+          <Route path="/taces" element={<Taxes/>}/>
+          <Route path="/TaxesAddUsers" element={<AddUsers/>}/>
           <Route path="/typiconIcons" element={<Blank />} />
           <Route path="/error500" element={<Page1 />} />
           <Route path="/error404" element={<Eror404 />} />
