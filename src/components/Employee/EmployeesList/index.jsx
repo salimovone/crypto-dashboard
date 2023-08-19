@@ -16,9 +16,11 @@ export default () => {
   const [action, setAction] = useState(0);
   const dispatch = useDispatch();
   const [deleteModal, setDeleteModal] = useState(false);
+  
   const Delete = (id) => {
     setDeleteModal(id);
   };
+
   const handleDelete = () => {
     dispatch(deleteEmployee(deleteModal));
     setDeleteModal(false);

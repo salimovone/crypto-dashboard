@@ -115,7 +115,7 @@ function BuySell() {
 
                     <Tables />
 
-                    <div className="mt-5 w-full overflow-x-scroll Scroll">
+                    <div className="mt-5 w-full overflow-x-scroll">
                         <Table />
                     </div>
                 </div>

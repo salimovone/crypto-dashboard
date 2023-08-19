@@ -23,6 +23,10 @@ import Register from './views/Pages/Register'
 import LookScreen from "./views/Pages/LookScreen";
 import ChangePassword from "./views/Pages/ChangePassword";
 import Profile from "./views/Pages/Profile";
+import Payments from "./views/Accounts/Payments";
+import Invoices from "./views/Accounts/Invoices";
+import Taxes from "./views/Accounts/Taxes";
+import AddUsers from "./components/Accounts/AddUsers";
 
 function App() {
   return (
@@ -55,6 +59,10 @@ function App() {
           <Route path="/lockScreen" element={<LookScreen/>}/>
           <Route path="/changePassword" element={<ChangePassword/>} />
           <Route path="/profile" element={<Profile/>}/>
+          <Route path="/payments" element={<Payments/>}/>
+          <Route path="/invoices" element={<Invoices/>} />
+          <Route path="/taces" element={<Taxes/>}/>
+          <Route path="/TaxesAddUsers" element={<AddUsers/>}/>
         </Routes>
       </div>
     </div>
