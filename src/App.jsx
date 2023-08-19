@@ -34,6 +34,8 @@ import AddHoliday from "./components/Employee/AddHoliday";
 import Attendance from "./components/Employee/Attendace";
 import Expences from "./views/Accounts/Expences";
 import ProvidentFund from "./views/Accounts/Provident Fund";
+import EmloyeeSolory from "./views/Payrroll/EmloyeeSolory";
+import Payslip from "./views/Payrroll/Payslip";
 
 function App() {
   return (
@@ -86,6 +88,8 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/expenses" element={<Expences/>}/>
           <Route path="/providentFunt" element={<ProvidentFund/>} />
+          <Route path="/employeeSalary" element={<EmloyeeSolory/>}/>
+          <Route path="/payslip" element={<Payslip/>}/>
         </Routes>
       </div>
     </div>
