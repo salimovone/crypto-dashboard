@@ -32,6 +32,8 @@ import AddLeave from "./components/Employee/AddLeave";
 import Holiday from "./components/Employee/Holiday";
 import AddHoliday from "./components/Employee/AddHoliday";
 import Attendance from "./components/Employee/Attendace";
+import Expences from "./views/Accounts/Expences";
+import ProvidentFund from "./views/Accounts/Provident Fund";
 
 function App() {
   return (
@@ -82,6 +84,8 @@ function App() {
           <Route path="/lockScreen" element={<LookScreen />} />
           <Route path="/changePassword" element={<ChangePassword />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/expenses" element={<Expences/>}/>
+          <Route path="/providentFunt" element={<ProvidentFund/>} />
         </Routes>
       </div>
     </div>
