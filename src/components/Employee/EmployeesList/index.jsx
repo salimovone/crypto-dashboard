@@ -6,14 +6,10 @@ import { useNavigate } from "react-router-dom";
 import { deleteEmployee } from "../../../redux/employeeList/employeeReducer";
 
 export default () => {
-  const [search, setSearch] = React.useState("");
-
-  const handleSearch = (event) => {
-    setSearch(event.target.value);
-  };
   const navigate = useNavigate();
   const employee = useSelector((state) => state.employeeList.employees);
   const [action, setAction] = useState(0);
+  const [nameSearch, setNameSearch] = useState("");
   const dispatch = useDispatch();
   const [deleteModal, setDeleteModal] = useState(false);
   const Delete = (id) => {
@@ -87,11 +83,14 @@ export default () => {
               Employee Name
             </p>
             <input
-              onChange={handleSearch}
               className="border-2 border-white rounded-lg bg-transparent w-full h-[40px] px-3 py-2"
               type="text"
               name=""
               id=""
+              onChange={(e) => {
+                console.log(e.target.value);
+                setNameSearch(e.target.value);
+              }}
             />
           </div>
           <div className="w-full">
@@ -119,7 +118,7 @@ export default () => {
           </div>
         </div>
         <div className="mt-5 w-full overflow-x-scroll xl:overflow-x-hidden">
-          <table className="employee_table w-[1100px] xl:w-full ">
+          <table className="leave_table w-[1100px] xl:w-full ">
             <thead>
               <tr>
                 <th className="text-sm font-bold text-[#35446f] text-left">
@@ -136,57 +135,67 @@ export default () => {
               </tr>
             </thead>
             <tbody className="transaction_card p-4 mt-4">
-              {employee.map((item) => (
-                <tr key={item.id} className="">
-                  <td className="flex items-center gap-2 py-2 px-4">
-                    <img src={Img} className="w-7 h-7 rounded-full" />
-                    <h2>{item.employee}</h2>
-                  </td>
-                  <td>{item.iD}</td>
-                  <td>
-                    <a href="#" className="text-sm text-[#234ce3] font-bold">
-                      [email&#160;protected]
-                    </a>
-                  </td>
-                  <td>{item.number}</td>
-                  <td>{item.date}</td>
-                  <td>
-                    <span>{item.role}</span>
-                  </td>
-                  <td className="text-end relative">
-                    <button
-                      className="text-2xl"
-                      onClick={() => {
-                        setAction(action === item.id ? 0 : item.id);
-                      }}
-                    >
-                      <BiDotsVerticalRounded />
-                    </button>
-                    <div
-                      className={`absolute flex justify-start flex-col w-[160px] h-[70px] top-8 right-5 ${
-                        action === item.id ? "block" : "hidden"
-                      } p-4 bg-white rounded-sm border z-50`}
-                    >
+              {employee
+                .filter((item) => {
+                  console.log(item);
+                  if (nameSearch == "") {
+                    return employee;
+                  } else {
+                    console.log(item.employee == nameSearch);
+                    return item.employee === nameSearch;
+                  }
+                })
+                .map((item) => (
+                  <tr key={item.id} className="">
+                    <td className="flex items-center gap-2 py-2 px-4">
+                      <img src={Img} className="w-7 h-7 rounded-full" />
+                      <h2>{item.employee}</h2>
+                    </td>
+                    <td>{item.iD}</td>
+                    <td>
+                      <a href="#" className="text-sm text-[#234ce3] font-bold">
+                        [email&#160;protected]
+                      </a>
+                    </td>
+                    <td>{item.number}</td>
+                    <td>{item.date}</td>
+                    <td>
+                      <span>{item.role}</span>
+                    </td>
+                    <td className="text-end relative">
                       <button
+                        className="text-2xl"
                         onClick={() => {
-                          navigate("/addEmployee", { state: item });
+                          setAction(action === item.id ? 0 : item.id);
                         }}
-                        className="flex items-center"
                       >
-                        <BiEdit className="text-md" /> Edit
+                        <BiDotsVerticalRounded />
                       </button>
-                      <button
-                        onClick={() => {
-                          Delete(item.id);
-                        }}
-                        className="flex items-center"
+                      <div
+                        className={`absolute flex justify-start flex-col w-[160px] h-[70px] top-8 right-5 ${
+                          action === item.id ? "block" : "hidden"
+                        } p-4 bg-white rounded-sm border z-50`}
                       >
-                        <BiTrash className="text-md" /> Delete
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-              ))}
+                        <button
+                          onClick={() => {
+                            navigate("/addEmployee", { state: item });
+                          }}
+                          className="flex items-center"
+                        >
+                          <BiEdit className="text-md" /> Edit
+                        </button>
+                        <button
+                          onClick={() => {
+                            Delete(item.id);
+                          }}
+                          className="flex items-center"
+                        >
+                          <BiTrash className="text-md" /> Delete
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                ))}
             </tbody>
           </table>
         </div>

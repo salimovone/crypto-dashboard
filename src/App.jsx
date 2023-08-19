@@ -15,14 +15,19 @@ import Email from "./views/Email";
 import EmployeeList from "./views/Employee/EmployeeList";
 import AddEmployee from "./components/Employee/AddEmployee";
 import Blank from "./views/Pages/Blank";
-import Page1 from './views/Pages/Page1'
+import Page1 from "./views/Pages/Page1";
 import Eror404 from "./views/Pages/Page2";
 import Login from "./views/Pages/Login";
-import Forget from './views/Pages/ForgetPassword';
-import Register from './views/Pages/Register'
+import Forget from "./views/Pages/ForgetPassword";
+import Register from "./views/Pages/Register";
 import LookScreen from "./views/Pages/LookScreen";
 import ChangePassword from "./views/Pages/ChangePassword";
 import Profile from "./views/Pages/Profile";
+import Leaves from "./components/Employee/Leaves";
+import AddLeave from "./components/Employee/AddLeave";
+import Holiday from "./components/Employee/Holiday";
+import AddHoliday from "./components/Employee/AddHoliday";
+import Attendance from "./components/Employee/Attendace";
 
 function App() {
   return (
@@ -44,17 +49,22 @@ function App() {
           <Route path="/wallet" element={<Wallet />} />
           <Route path="/employeesList" element={<EmployeeList />} />
           <Route path="/addEmployee" element={<AddEmployee />} />
+          <Route path="/leaves" element={<Leaves />} />
+          <Route path="/addLeave" element={<AddLeave />} />
+          <Route path="/holidays" element={<Holiday />} />
+          <Route path="/addHoliday" element={<AddHoliday />} />
+          <Route path="/attendance" element={<Attendance />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/email" element={<Email />} />
-          <Route path="/typiconIcons" element={<Blank/>} />
-          <Route path="/error500" element={<Page1/>} />
-          <Route path="/error404" element={<Eror404/>}/>
-          <Route path="/login" element={<Login/>}/>
-          <Route path="/forgotPassword" element={<Forget/>}/>
-          <Route path="/register" element={<Register/>}/>
-          <Route path="/lockScreen" element={<LookScreen/>}/>
-          <Route path="/changePassword" element={<ChangePassword/>} />
-          <Route path="/profile" element={<Profile/>}/>
+          <Route path="/typiconIcons" element={<Blank />} />
+          <Route path="/error500" element={<Page1 />} />
+          <Route path="/error404" element={<Eror404 />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/forgotPassword" element={<Forget />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/lockScreen" element={<LookScreen />} />
+          <Route path="/changePassword" element={<ChangePassword />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </div>
     </div>
