@@ -38,6 +38,14 @@ import EmloyeeSolory from "./views/Payrroll/EmloyeeSolory";
 import Payslip from "./views/Payrroll/Payslip";
 import ExpenceReport from "./views/Reports/ExpenceReport";
 import InvoiceReport from "./views/Reports/InvoiceReport";
+import FontawesomeIcon from "./views/Icons/FontawesomeIcon";
+import FatherIcons from "./views/Icons/FatherIcons";
+import IonicIcons from "./views/Icons/IonicIcons";
+import MaterialIcons from './views/Icons/MaterialIcons';
+import Pe7Icons from './views/Icons/Pe7Icons';
+import SimplelineIcons from './views/Icons/SimplelineIcons';
+import ThemifyIcons from './views/Icons/ThemifyIcons'
+import FlagIcons from './views/Icons/FlagIcons'
 
 function App() {
   return (
@@ -94,6 +102,14 @@ function App() {
           <Route path="/payslip" element={<Payslip/>}/>
           <Route path="/expenseReport" element={<ExpenceReport/>} />
           <Route path="/invoiceReport" element={<InvoiceReport/>} />
+          <Route path="/fontawesomeIcons" element={<FontawesomeIcon/>}/>
+          <Route path="/featherIcons" element={<FatherIcons/>}/>
+          <Route path="/ionicIcons" element={<IonicIcons/>} />
+          <Route path="/materialIcons" element={<MaterialIcons/>}/>
+          <Route path="/pe7Icons" element={<Pe7Icons/>} />
+          <Route path="/simplelineIcons" element={<SimplelineIcons/>} />
+          <Route path="/themifyIcons" element={<ThemifyIcons/>} />
+          <Route path="/flagIcons" element={<FlagIcons/>} />
         </Routes>
       </div>
     </div>
