@@ -61,19 +61,10 @@ export default () => {
             </div>
 
             <div className="transaction_card p-5 m-5 mt-10">
-                <div className="flex items-center justify-between ">
-                    <div className="text-xl font-bold text-[#35446f]">Invoices</div>
-                    <button
-                        onClick={() => {
-                            navigate("/TaxesAddUsers");
-                        }}
-                        className="bg-[#234ce3] transition-all hover:bg-[#fe3f51] w-[132px] h-[35px] rounded-full text-sm flex justify-center items-center text-white"
-                    >
-                        <p className="text-2xl font-bold mt-[-5px]">+</p>
-                        <p>Create Invoice</p>
-                    </button>
+                <div className="flex items-center justify-between">
+                    <div className="text-xl font-bold text-[#35446f]">Invoices Report</div>
                 </div>
-                <div className="flex gap-5 mt-5 justify-between items-end flex-col md:flex-row">
+                <div className="flex gap-5 mt-10 justify-between items-end flex-col md:flex-row">
                 <div className="w-full">
                     <p className="text-sm text-center text-[#35446f] font-bold">
                         Status
