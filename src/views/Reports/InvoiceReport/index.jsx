@@ -1,10 +1,13 @@
 import React from 'react'
-import Invoices from '../../Accounts/Invoices'
+import Navbar from '../../../components/Navbar'
+import InvoiceReportTable from '../../../components/Reports/InvoiceReportTable'
 
 export default () => {
     return (
         <div>
-            <Invoices/>
+            <Navbar />
+
+            <InvoiceReportTable/>
         </div>
     )
 }
