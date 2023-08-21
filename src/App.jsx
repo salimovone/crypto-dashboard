@@ -46,6 +46,8 @@ import Pe7Icons from './views/Icons/Pe7Icons';
 import SimplelineIcons from './views/Icons/SimplelineIcons';
 import ThemifyIcons from './views/Icons/ThemifyIcons'
 import FlagIcons from './views/Icons/FlagIcons'
+import BasicTable from "./views/Tables/BasicTable";
+import DataTable from "./views/Tables/DataTable";
 
 function App() {
   return (
@@ -110,6 +112,8 @@ function App() {
           <Route path="/simplelineIcons" element={<SimplelineIcons/>} />
           <Route path="/themifyIcons" element={<ThemifyIcons/>} />
           <Route path="/flagIcons" element={<FlagIcons/>} />
+          <Route path="/basicTable" element={<BasicTable/>} />
+          <Route path="/dataTable" element={<DataTable/>} />
         </Routes>
       </div>
     </div>
