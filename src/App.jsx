@@ -12,6 +12,7 @@ import SingleTransaction from "./views/Transactions/SingleTransaction";
 import Wallet from "./views/Wallet";
 import Settings from "./views/Settings";
 import Email from "./views/Email";
+import Chats from "./views/Chats";
 import EmployeeList from "./views/Employee/EmployeeList";
 import AddEmployee from "./components/Employee/AddEmployee";
 import Blank from "./views/Pages/Blank";
@@ -90,6 +91,7 @@ function App() {
           <Route path="/spinner" element={<Loader />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/email" element={<Email />} />
+          <Route path="/chat" element={<Chats />} />
           <Route path="/typiconIcons" element={<Blank/>} />
           <Route path="/error500" element={<Page1/>} />
           <Route path="/error404" element={<Eror404/>}/>
