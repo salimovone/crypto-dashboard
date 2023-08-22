@@ -123,7 +123,7 @@ const Menus = [
       { title: "Ribbon", link: "/ribbon" },
       { title: "Clipboard", link: "/clipboard" },
       { title: "Drag & Drop", link: "/dragDrop" },
-      { title: "Range Slider", link: "/rangeSider" },
+      { title: "Range Slider", link: "/rangeSlider" },
       { title: "Rating", link: "/Rating" },
       { title: "Toastr", link: "/Toastr" },
       { title: "Text Editor", link: "/textEditor" },

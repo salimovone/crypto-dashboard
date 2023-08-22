@@ -150,12 +150,9 @@ NavLink:hover {
 .Shadow {
   box-shadow: 0 4px 9px #e1ecff, inset 0 0 15px rgba(255, 255, 255, 0.35);
 }
-
 .employee_table td {
   padding: 15px 20px;
 }
-
-
 .payment_card {
   padding: 15px;
   margin-bottom: 30px;
@@ -171,7 +168,28 @@ NavLink:hover {
 .holiday_table td {
   padding: 15px 0px;
 }
-
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltiptext {
+  font-size: 13px;
+  display: none;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+.tooltip:hover > .tooltiptext {
+  display: block;
+}
+.Slider {
+  background: red !important;
+  color: red !important;
+}
 .Tables_bg {
   background: rgba(255,255,255,.2);
 }
