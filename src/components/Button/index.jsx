@@ -3,7 +3,7 @@ import { Main } from './style'
 
 const Button = (props) => {
   return (
-    <Main {...props}>{props.name}</Main>
+    <Main {...props}>{props.icon}{props.name}</Main>
   )
 }
 

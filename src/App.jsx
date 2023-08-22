@@ -12,6 +12,7 @@ import SingleTransaction from "./views/Transactions/SingleTransaction";
 import Wallet from "./views/Wallet";
 import Settings from "./views/Settings";
 import Email from "./views/Email";
+import Chats from "./views/Chats";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/wallet" element={<Wallet />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/email" element={<Email />} />
+          <Route path="/chat" element={<Chats />} />
         </Routes>
       </div>
     </div>
