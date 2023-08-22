@@ -13,7 +13,7 @@
 
 .container_search {
   width: 100%;
-  padding: 30px;
+  padding: 20px;
 }
 
 @media screen and (max-width: 480px) {
@@ -27,12 +27,10 @@
 }
 
 .transaction_card {
-  background: linear-gradient(
-      51.64deg,
+  background: linear-gradient(51.64deg,
       rgba(255, 255, 255, 0) 34.2%,
       rgba(255, 255, 255, 0.2) 97.35%,
-      rgba(255, 255, 255, 0) 160.66%
-    ),
+      rgba(255, 255, 255, 0) 160.66%),
     rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 9px #e1ecff, inset 0 0 15px rgba(255, 255, 255, 0.35);
   border-radius: 5px;
@@ -41,7 +39,7 @@
 .container_market {
   width: 100%;
   height: 95%;
-  padding: 30px;
+  padding: 20px;
 }
 
 .img1 {
@@ -57,16 +55,14 @@
 }
 
 .box_login {
-  background: linear-gradient(
-      51.64deg,
+  background: linear-gradient(51.64deg,
       rgba(255, 255, 255, 0) 34.2%,
       rgba(255, 255, 255, 0.2) 97.35%,
-      rgba(255, 255, 255, 0) 160.66%
-    ),
+      rgba(255, 255, 255, 0) 160.66%),
     rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 9px #e1ecff, inset 0 0 15px rgba(255, 255, 255, 0.35);
   margin: 0 auto;
-  padding: 30px;
+  padding: 20px;
   border-radius: 5px;
   margin-top: 20px !important;
 }
@@ -81,12 +77,10 @@
   margin-bottom: 30px;
   padding: 20px;
   position: relative;
-  background: linear-gradient(
-      51.64deg,
+  background: linear-gradient(51.64deg,
       rgba(255, 255, 255, 0) 34.2%,
       rgba(255, 255, 255, 0.2) 97.35%,
-      rgba(255, 255, 255, 0) 160.66%
-    ),
+      rgba(255, 255, 255, 0) 160.66%),
     rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 9px #e1ecff, inset 0 0 15px rgb(255 255 255/35%);
   border-radius: 5px;
@@ -102,17 +96,14 @@
   --bs-nav-tabs-link-active-color: #495057;
   --bs-nav-tabs-link-active-bg: #fff;
   --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #fff;
-  border-bottom: var(--bs-nav-tabs-border-width) solid
-    var(--bs-nav-tabs-border-color);
+  border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
 }
 
 .container2 {
-  background: linear-gradient(
-      51.64deg,
+  background: linear-gradient(51.64deg,
       rgba(255, 255, 255, 0) 34.2%,
       rgba(255, 255, 255, 0.2) 97.35%,
-      rgba(255, 255, 255, 0) 160.66%
-    ),
+      rgba(255, 255, 255, 0) 160.66%),
     rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 9px #e1ecff, inset 0 0 15px rgba(255, 255, 255, 0.35);
   border-radius: 5px;
@@ -121,12 +112,10 @@
 }
 
 .ssss {
-  background: linear-gradient(
-      51.64deg,
+  background: linear-gradient(51.64deg,
       rgba(255, 255, 255, 0) 34.2%,
       rgba(255, 255, 255, 0.2) 97.35%,
-      rgba(255, 255, 255, 0) 160.66%
-    ),
+      rgba(255, 255, 255, 0) 160.66%),
     rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 9px #e1ecff, inset 0 0 15px rgb(255 255 255/35%);
   border-radius: 5px;
@@ -151,7 +140,7 @@
 .container_single {
   width: 100%;
   height: 100%;
-  padding: 30px;
+  padding: 20px;
 }
 
 NavLink:hover {
@@ -164,10 +153,18 @@ NavLink:hover {
 .employee_table td {
   padding: 15px 20px;
 }
+.payment_card {
+  padding: 15px;
+  margin-bottom: 30px;
+  background: linear-gradient(51.64deg, rgba(255, 255, 255, 0) 34.2%, rgba(255, 255, 255, 0.2) 97.35%, rgba(255, 255, 255, 0) 160.66%), rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 9px #e1ecff, inset 0 0 15px rgba(255, 255, 255, .35);
+  border-radius: 5px;
+}
 
 .leave_table td {
   padding: 15px 10px;
 }
+
 .holiday_table td {
   padding: 15px 0px;
 }
@@ -186,11 +183,13 @@ NavLink:hover {
   position: absolute;
   z-index: 1;
 }
-
 .tooltip:hover > .tooltiptext {
   display: block;
 }
 .Slider {
   background: red !important;
   color: red !important;
+}
+.Tables_bg {
+  background: rgba(255,255,255,.2);
 }

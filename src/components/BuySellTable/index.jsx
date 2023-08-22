@@ -216,7 +216,7 @@ function BuySell() {
             </div>
 
             <div class="relative overflow-x-scroll  xl:overflow-x-hidden sm:rounded-lg  h-full mt-14 z-30">
-                <table class="w-[1100px] xl:w-[1220px] text-sm text-left overflow-x-scroll">
+                <table class="w-[1100px] xl:w-[1218px] text-sm text-left overflow-x-scroll">
                     <thead class="text-md text-[#35446F] uppercase bg-inherit pb-10">
                         <tr>
                             <th scope="col" class="px-4 py-3">
@@ -329,7 +329,7 @@ function BuySell() {
                 </table>
             </div>
 
-            <div className="flex flex-wrap justify-between px-[20px] w-[100%] pt-4 md:ml-3">
+            <div className="flex flex-wrap justify-between px-[20px] w-[100%] pt-4">
                 <div className="text-[#566787]">
                     <p>Showing {number} out of {number2} entries</p>
                 </div>

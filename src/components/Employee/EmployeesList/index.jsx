@@ -12,9 +12,11 @@ export default () => {
   const [nameSearch, setNameSearch] = useState("");
   const dispatch = useDispatch();
   const [deleteModal, setDeleteModal] = useState(false);
+  
   const Delete = (id) => {
     setDeleteModal(id);
   };
+
   const handleDelete = () => {
     dispatch(deleteEmployee(deleteModal));
     setDeleteModal(false);

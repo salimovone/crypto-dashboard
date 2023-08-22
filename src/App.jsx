@@ -23,6 +23,10 @@ import Register from "./views/Pages/Register";
 import LookScreen from "./views/Pages/LookScreen";
 import ChangePassword from "./views/Pages/ChangePassword";
 import Profile from "./views/Pages/Profile";
+import Payments from "./views/Accounts/Payments";
+import Invoices from "./views/Accounts/Invoices";
+import Taxes from "./views/Accounts/Taxes";
+import AddUsers from "./components/Accounts/AddUsers";
 import Leaves from "./components/Employee/Leaves";
 import AddLeave from "./components/Employee/AddLeave";
 import Holiday from "./components/Employee/Holiday";
@@ -35,6 +39,22 @@ import Ribbon from "./views/Elements/Ribbon";
 import Rating from "./views/Elements/Rating";
 import Toastr from "./views/Elements/Toastr";
 import Loader from "./views/Elements/Spinner";
+import Expences from "./views/Accounts/Expences";
+import ProvidentFund from "./views/Accounts/Provident Fund";
+import EmloyeeSolory from "./views/Payrroll/EmloyeeSolory";
+import Payslip from "./views/Payrroll/Payslip";
+import ExpenceReport from "./views/Reports/ExpenceReport";
+import InvoiceReport from "./views/Reports/InvoiceReport";
+import FontawesomeIcon from "./views/Icons/FontawesomeIcon";
+import FatherIcons from "./views/Icons/FatherIcons";
+import IonicIcons from "./views/Icons/IonicIcons";
+import MaterialIcons from './views/Icons/MaterialIcons';
+import Pe7Icons from './views/Icons/Pe7Icons';
+import SimplelineIcons from './views/Icons/SimplelineIcons';
+import ThemifyIcons from './views/Icons/ThemifyIcons'
+import FlagIcons from './views/Icons/FlagIcons'
+import BasicTable from "./views/Tables/BasicTable";
+import DataTable from "./views/Tables/DataTable";
 
 function App() {
   return (
@@ -70,6 +90,19 @@ function App() {
           <Route path="/spinner" element={<Loader />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/email" element={<Email />} />
+          <Route path="/typiconIcons" element={<Blank/>} />
+          <Route path="/error500" element={<Page1/>} />
+          <Route path="/error404" element={<Eror404/>}/>
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/forgotPassword" element={<Forget/>}/>
+          <Route path="/register" element={<Register/>}/>
+          <Route path="/lockScreen" element={<LookScreen/>}/>
+          <Route path="/changePassword" element={<ChangePassword/>} />
+          <Route path="/profile" element={<Profile/>}/>
+          <Route path="/payments" element={<Payments/>}/>
+          <Route path="/invoices" element={<Invoices/>} />
+          <Route path="/taces" element={<Taxes/>}/>
+          <Route path="/TaxesAddUsers" element={<AddUsers/>}/>
           <Route path="/typiconIcons" element={<Blank />} />
           <Route path="/error500" element={<Page1 />} />
           <Route path="/error404" element={<Eror404 />} />
@@ -79,6 +112,22 @@ function App() {
           <Route path="/lockScreen" element={<LookScreen />} />
           <Route path="/changePassword" element={<ChangePassword />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/expenses" element={<Expences/>}/>
+          <Route path="/providentFunt" element={<ProvidentFund/>} />
+          <Route path="/employeeSalary" element={<EmloyeeSolory/>}/>
+          <Route path="/payslip" element={<Payslip/>}/>
+          <Route path="/expenseReport" element={<ExpenceReport/>} />
+          <Route path="/invoiceReport" element={<InvoiceReport/>} />
+          <Route path="/fontawesomeIcons" element={<FontawesomeIcon/>}/>
+          <Route path="/featherIcons" element={<FatherIcons/>}/>
+          <Route path="/ionicIcons" element={<IonicIcons/>} />
+          <Route path="/materialIcons" element={<MaterialIcons/>}/>
+          <Route path="/pe7Icons" element={<Pe7Icons/>} />
+          <Route path="/simplelineIcons" element={<SimplelineIcons/>} />
+          <Route path="/themifyIcons" element={<ThemifyIcons/>} />
+          <Route path="/flagIcons" element={<FlagIcons/>} />
+          <Route path="/basicTable" element={<BasicTable/>} />
+          <Route path="/dataTable" element={<DataTable/>} />
         </Routes>
       </div>
     </div>

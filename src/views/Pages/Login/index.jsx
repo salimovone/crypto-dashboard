@@ -47,7 +47,7 @@ function Login() {
                         </div>
 
                         <div className="mt-5">
-                            <p>Don't have an account? <span className="text-blue-700 font-medium">Sign Up</span></p>
+                            <Link to={'/register'}><p>Don't have an account? <span className="text-blue-700 font-medium">Sign Up</span></p></Link>
                         </div>
                     </div>
                 </div>
