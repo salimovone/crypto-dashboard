@@ -28,6 +28,13 @@ import AddLeave from "./components/Employee/AddLeave";
 import Holiday from "./components/Employee/Holiday";
 import AddHoliday from "./components/Employee/AddHoliday";
 import Attendance from "./components/Employee/Attendace";
+import SweetAlerts from "./views/Elements/SweetAlerts";
+import Tooltip from "./views/Elements/Tooltip";
+import Popever from "./views/Elements/Popever";
+import Ribbon from "./views/Elements/Ribbon";
+import Rating from "./views/Elements/Rating";
+import Toastr from "./views/Elements/Toastr";
+import Loader from "./views/Elements/Spinner";
 
 function App() {
   return (
@@ -54,6 +61,13 @@ function App() {
           <Route path="/holidays" element={<Holiday />} />
           <Route path="/addHoliday" element={<AddHoliday />} />
           <Route path="/attendance" element={<Attendance />} />
+          <Route path="/sweetAlerts" element={<SweetAlerts />} />
+          <Route path="/tooltip" element={<Tooltip />} />
+          <Route path="/popever" element={<Popever />} />
+          <Route path="/ribbon" element={<Ribbon />} />
+          <Route path="/Rating" element={<Rating />} />
+          <Route path="/toastr" element={<Toastr />} />
+          <Route path="/spinner" element={<Loader />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/email" element={<Email />} />
           <Route path="/typiconIcons" element={<Blank />} />

@@ -4,6 +4,12 @@
 
 :root {
   --main-color: #35446f;
+  --primary-color: #234ce3;
+  --succes-color: #198754;
+  --error-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #0dcaf0;
+  --light-red-color: #fe3f51;
 }
 
 body {

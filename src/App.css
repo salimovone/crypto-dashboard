@@ -171,3 +171,26 @@ NavLink:hover {
 .holiday_table td {
   padding: 15px 0px;
 }
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltiptext {
+  font-size: 13px;
+  display: none;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover > .tooltiptext {
+  display: block;
+}
+.Slider {
+  background: red !important;
+  color: red !important;
+}
