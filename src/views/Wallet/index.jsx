@@ -16,7 +16,10 @@ const Wallet = () => {
       <Transfer />
       <WalletTransaction />
       <Tablettop />
-      <BuySellTable />
+
+      <div className="w-full overflow-x-scroll">
+        <BuySellTable />
+      </div>
     </div>
   );
 };

@@ -48,6 +48,10 @@ import ThemifyIcons from './views/Icons/ThemifyIcons'
 import FlagIcons from './views/Icons/FlagIcons'
 import BasicTable from "./views/Tables/BasicTable";
 import DataTable from "./views/Tables/DataTable";
+import MorrisCharts from "./views/Charts/MorrisCharts";
+import Am4Charts from "./views/Charts/Am4Charts";
+import ApexCharts from "./views/Charts/ApexCharts";
+import ChartJs from "./views/Charts/ChartJs";
 
 function App() {
   return (
@@ -114,6 +118,10 @@ function App() {
           <Route path="/flagIcons" element={<FlagIcons/>} />
           <Route path="/basicTable" element={<BasicTable/>} />
           <Route path="/dataTable" element={<DataTable/>} />
+          <Route path="/morrisChart" element={<MorrisCharts />} />
+          <Route path="/am4charts" element={<Am4Charts/>} />
+          <Route path="/apexCharts" element={<ApexCharts/>} />
+          <Route path="/chartsJs" element={<ChartJs/>} />
         </Routes>
       </div>
     </div>
