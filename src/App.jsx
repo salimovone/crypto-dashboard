@@ -48,13 +48,19 @@ import InvoiceReport from "./views/Reports/InvoiceReport";
 import FontawesomeIcon from "./views/Icons/FontawesomeIcon";
 import FatherIcons from "./views/Icons/FatherIcons";
 import IonicIcons from "./views/Icons/IonicIcons";
-import MaterialIcons from './views/Icons/MaterialIcons';
-import Pe7Icons from './views/Icons/Pe7Icons';
-import SimplelineIcons from './views/Icons/SimplelineIcons';
-import ThemifyIcons from './views/Icons/ThemifyIcons'
-import FlagIcons from './views/Icons/FlagIcons'
+import MaterialIcons from "./views/Icons/MaterialIcons";
+import Pe7Icons from "./views/Icons/Pe7Icons";
+import SimplelineIcons from "./views/Icons/SimplelineIcons";
+import ThemifyIcons from "./views/Icons/ThemifyIcons";
+import FlagIcons from "./views/Icons/FlagIcons";
 import BasicTable from "./views/Tables/BasicTable";
 import DataTable from "./views/Tables/DataTable";
+import ScrollBar from "./views/Elements/ScrollBar";
+import RangeSlider from "./views/Elements/RangeSlider";
+import TimeLine from "./views/Elements/TimeLine";
+import WizardForm from "./views/Elements/WizardForm";
+import StickyNotes from "./views/Elements/StikyNotes";
+import Clipboard from "./views/Elements/Clipboard";
 
 function App() {
   return (
@@ -88,21 +94,10 @@ function App() {
           <Route path="/Rating" element={<Rating />} />
           <Route path="/toastr" element={<Toastr />} />
           <Route path="/spinner" element={<Loader />} />
+          <Route path="/scrollbar" element={<ScrollBar />} />
+          <Route path="/rangeSlider" element={<RangeSlider />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/email" element={<Email />} />
-          <Route path="/typiconIcons" element={<Blank/>} />
-          <Route path="/error500" element={<Page1/>} />
-          <Route path="/error404" element={<Eror404/>}/>
-          <Route path="/login" element={<Login/>}/>
-          <Route path="/forgotPassword" element={<Forget/>}/>
-          <Route path="/register" element={<Register/>}/>
-          <Route path="/lockScreen" element={<LookScreen/>}/>
-          <Route path="/changePassword" element={<ChangePassword/>} />
-          <Route path="/profile" element={<Profile/>}/>
-          <Route path="/payments" element={<Payments/>}/>
-          <Route path="/invoices" element={<Invoices/>} />
-          <Route path="/taces" element={<Taxes/>}/>
-          <Route path="/TaxesAddUsers" element={<AddUsers/>}/>
           <Route path="/typiconIcons" element={<Blank />} />
           <Route path="/error500" element={<Page1 />} />
           <Route path="/error404" element={<Eror404 />} />
@@ -112,22 +107,39 @@ function App() {
           <Route path="/lockScreen" element={<LookScreen />} />
           <Route path="/changePassword" element={<ChangePassword />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/expenses" element={<Expences/>}/>
-          <Route path="/providentFunt" element={<ProvidentFund/>} />
-          <Route path="/employeeSalary" element={<EmloyeeSolory/>}/>
-          <Route path="/payslip" element={<Payslip/>}/>
-          <Route path="/expenseReport" element={<ExpenceReport/>} />
-          <Route path="/invoiceReport" element={<InvoiceReport/>} />
-          <Route path="/fontawesomeIcons" element={<FontawesomeIcon/>}/>
-          <Route path="/featherIcons" element={<FatherIcons/>}/>
-          <Route path="/ionicIcons" element={<IonicIcons/>} />
-          <Route path="/materialIcons" element={<MaterialIcons/>}/>
-          <Route path="/pe7Icons" element={<Pe7Icons/>} />
-          <Route path="/simplelineIcons" element={<SimplelineIcons/>} />
-          <Route path="/themifyIcons" element={<ThemifyIcons/>} />
-          <Route path="/flagIcons" element={<FlagIcons/>} />
-          <Route path="/basicTable" element={<BasicTable/>} />
-          <Route path="/dataTable" element={<DataTable/>} />
+          <Route path="/payments" element={<Payments />} />
+          <Route path="/invoices" element={<Invoices />} />
+          <Route path="/taces" element={<Taxes />} />
+          <Route path="/TaxesAddUsers" element={<AddUsers />} />
+          <Route path="/typiconIcons" element={<Blank />} />
+          <Route path="/error500" element={<Page1 />} />
+          <Route path="/error404" element={<Eror404 />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/forgotPassword" element={<Forget />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/lockScreen" element={<LookScreen />} />
+          <Route path="/changePassword" element={<ChangePassword />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/expenses" element={<Expences />} />
+          <Route path="/providentFunt" element={<ProvidentFund />} />
+          <Route path="/employeeSalary" element={<EmloyeeSolory />} />
+          <Route path="/payslip" element={<Payslip />} />
+          <Route path="/expenseReport" element={<ExpenceReport />} />
+          <Route path="/invoiceReport" element={<InvoiceReport />} />
+          <Route path="/fontawesomeIcons" element={<FontawesomeIcon />} />
+          <Route path="/featherIcons" element={<FatherIcons />} />
+          <Route path="/ionicIcons" element={<IonicIcons />} />
+          <Route path="/materialIcons" element={<MaterialIcons />} />
+          <Route path="/pe7Icons" element={<Pe7Icons />} />
+          <Route path="/simplelineIcons" element={<SimplelineIcons />} />
+          <Route path="/themifyIcons" element={<ThemifyIcons />} />
+          <Route path="/flagIcons" element={<FlagIcons />} />
+          <Route path="/basicTable" element={<BasicTable />} />
+          <Route path="/dataTable" element={<DataTable />} />
+          <Route path="/timeLine" element={<TimeLine />} />
+          <Route path="/formWizard" element={<WizardForm />} />
+          <Route path="/stikyNote" element={<StickyNotes />} />
+          <Route path="/clipboard" element={<Clipboard />} />
         </Routes>
       </div>
     </div>
