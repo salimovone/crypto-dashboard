@@ -185,7 +185,7 @@ const Menus = [
       { title: "Am4charts", link: "/am4charts" },
       { title: "Apex Charts", link: "/apexCharts" },
       { title: "Charts JS", link: "/chartsJs" },
-      { title: "Flot Charts", link: "/flot Charts" },
+      { title: "Flot Charts", link: "/flotCharts" },
       { title: "Piety Charts", link: "/pietyCharts" },
       { title: "C3 Charts", link: "/c3Charts" },
     ],
