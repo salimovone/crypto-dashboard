@@ -37,3 +37,8 @@ body {
   color: #818181;
   font-size: 14px;
 }
+
+.appGrid{
+  grid-template-columns: 3.5fr 8.5fr;
+  gap: 20px;
+}

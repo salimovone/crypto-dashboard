@@ -42,6 +42,10 @@
   width: 100%;
   height: 95%;
   padding: 20px;
+
+  .recharts-dot {
+    display: none;
+  }
 }
 
 .img1 {
@@ -52,9 +56,7 @@
   filter: invert(1) brightness(100);
 }
 
-.recharts-dot {
-  display: none;
-}
+
 
 .box_login {
   background: linear-gradient(

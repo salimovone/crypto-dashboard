@@ -9,7 +9,7 @@ import Menus from "./data";
 import TrackIcon from "../../assets/img/icon/track-icon.png";
 
 const SideBar = () => {
-  const [actived, setActived] = useState(1);
+  const [actived, setActived] = useState(2);
   const [open, setOpen] = useState(true);
   const [submenuOpen, setSubmenuOpen] = useState(-1);
   const navigate = useNavigate();

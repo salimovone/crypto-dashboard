@@ -12,6 +12,7 @@ import SingleTransaction from "./views/Transactions/SingleTransaction";
 import Wallet from "./views/Wallet";
 import Settings from "./views/Settings";
 import Email from "./views/Email";
+import Chats from "./views/Chats";
 import EmployeeList from "./views/Employee/EmployeeList";
 import AddEmployee from "./components/Employee/AddEmployee";
 import Blank from "./views/Pages/Blank";
@@ -61,6 +62,10 @@ import TimeLine from "./views/Elements/TimeLine";
 import WizardForm from "./views/Elements/WizardForm";
 import StickyNotes from "./views/Elements/StikyNotes";
 import Clipboard from "./views/Elements/Clipboard";
+import MorrisCharts from "./views/Charts/MorrisCharts";
+import Am4Charts from "./views/Charts/Am4Charts";
+import ApexCharts from "./views/Charts/ApexCharts";
+import ChartJs from "./views/Charts/ChartJs";
 
 function App() {
   return (
@@ -98,27 +103,19 @@ function App() {
           <Route path="/rangeSlider" element={<RangeSlider />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/email" element={<Email />} />
-          <Route path="/typiconIcons" element={<Blank />} />
-          <Route path="/error500" element={<Page1 />} />
-          <Route path="/error404" element={<Eror404 />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/forgotPassword" element={<Forget />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/lockScreen" element={<LookScreen />} />
-          <Route path="/changePassword" element={<ChangePassword />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/payments" element={<Payments />} />
-          <Route path="/invoices" element={<Invoices />} />
-          <Route path="/taces" element={<Taxes />} />
-          <Route path="/TaxesAddUsers" element={<AddUsers />} />
-          <Route path="/typiconIcons" element={<Blank />} />
-          <Route path="/error500" element={<Page1 />} />
-          <Route path="/error404" element={<Eror404 />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/forgotPassword" element={<Forget />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/lockScreen" element={<LookScreen />} />
-          <Route path="/changePassword" element={<ChangePassword />} />
+          <Route path="/chat" element={<Chats />} />
+          <Route path="/typiconIcons" element={<Blank/>} />
+          <Route path="/error500" element={<Page1/>} />
+          <Route path="/error404" element={<Eror404/>}/>
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/forgotPassword" element={<Forget/>}/>
+          <Route path="/register" element={<Register/>}/>
+          <Route path="/lockScreen" element={<LookScreen/>}/>
+          <Route path="/changePassword" element={<ChangePassword/>} />
+          <Route path="/payments" element={<Payments/>}/>
+          <Route path="/invoices" element={<Invoices/>} />
+          <Route path="/taces" element={<Taxes/>}/>
+          <Route path="/TaxesAddUsers" element={<AddUsers/>}/>
           <Route path="/profile" element={<Profile />} />
           <Route path="/expenses" element={<Expences />} />
           <Route path="/providentFunt" element={<ProvidentFund />} />
@@ -140,6 +137,10 @@ function App() {
           <Route path="/formWizard" element={<WizardForm />} />
           <Route path="/stikyNote" element={<StickyNotes />} />
           <Route path="/clipboard" element={<Clipboard />} />
+          <Route path="/morrisChart" element={<MorrisCharts />} />
+          <Route path="/am4charts" element={<Am4Charts/>} />
+          <Route path="/apexCharts" element={<ApexCharts/>} />
+          <Route path="/chartsJs" element={<ChartJs/>} />
         </Routes>
       </div>
     </div>
