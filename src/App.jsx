@@ -66,6 +66,10 @@ import MorrisCharts from "./views/Charts/MorrisCharts";
 import Am4Charts from "./views/Charts/Am4Charts";
 import ApexCharts from "./views/Charts/ApexCharts";
 import ChartJs from "./views/Charts/ChartJs";
+import TextEditor from "./views/Elements/TextEditor";
+import Counter from "./views/Elements/Counter";
+import Notification from "./views/Elements/Notification";
+import Lightbox from "./views/Elements/Lightbox";
 import WheaterIcons from "./views/Icons/WheaterIcons";
 import FlotCharts from "./views/Charts/FlotCharts";
 import PietyCharts from './views/Charts/PeityCharts';
@@ -145,6 +149,10 @@ function App() {
           <Route path="/am4charts" element={<Am4Charts />} />
           <Route path="/apexCharts" element={<ApexCharts />} />
           <Route path="/chartsJs" element={<ChartJs />} />
+          <Route path="/textEditor" element={<TextEditor />} />
+          <Route path="/counter" element={<Counter />} />
+          <Route path="/notification" element={<Notification />} />
+          <Route path="/lightbox" element={<Lightbox />} />
           <Route path="/weatherIcons" element={<WheaterIcons />} />
           <Route path="/flotCharts" element={<FlotCharts />} />
           <Route path="/pietyCharts" element={<PietyCharts />} />
