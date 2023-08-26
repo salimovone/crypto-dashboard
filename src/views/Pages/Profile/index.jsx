@@ -2,10 +2,23 @@ import { AiOutlinePlus } from "react-icons/ai";
 import React, { useState } from 'react'
 import Navbar from "../../../components/Navbar";
 import img1 from '../../../assets/img/img1.jpg'
+import { useLocation } from "react-router-dom";
 
 export default () => {
 
     const [just, setJust] = useState(0)
+    const location = useLocation()
+
+    let data;
+    if(location.state.image){
+        data = location.state
+    }else{
+        data = {
+            image: img1,
+            name: 'Cristina Groves',
+            job: 'staff'
+        }
+    }
 
     return (
         <>
@@ -26,13 +39,13 @@ export default () => {
                         <div className="md:grid-cols-2 lg:gap-0 gap-10 md:gap-5 grid">
                             <div className="md:flex gap-10">
                                 <div className="flex md:inline-block justify-center">
-                                    <img src={img1} alt="" className="w-[150px] rounded-full" />
+                                    <img src={data.image} alt="" className="w-[150px] rounded-full" />
                                 </div>
 
                                 <div className="flex md:inline-block justify-center md:text-left text-center">
                                     <div>
-                                        <p className="text-[25px]">Cristina Groves</p>
-                                        <p className="text-[14px]">Staff</p>
+                                        <p className="text-[25px]">{data.name}</p>
+                                        <p className="text-[14px]">{data.job}</p>
                                         <p>Employee ID : DR-0001</p>
                                         <button className="py-1 mt-6
                                      px-2 text-white rounded-lg bg-blue-700">Send Message</button>

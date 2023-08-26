@@ -70,6 +70,10 @@ import TextEditor from "./views/Elements/TextEditor";
 import Counter from "./views/Elements/Counter";
 import Notification from "./views/Elements/Notification";
 import Lightbox from "./views/Elements/Lightbox";
+import WheaterIcons from "./views/Icons/WheaterIcons";
+import FlotCharts from "./views/Charts/FlotCharts";
+import PietyCharts from './views/Charts/PeityCharts';
+import C3Charts from './views/Charts/C3Charts'
 
 function App() {
   return (
@@ -149,6 +153,10 @@ function App() {
           <Route path="/counter" element={<Counter />} />
           <Route path="/notification" element={<Notification />} />
           <Route path="/lightbox" element={<Lightbox />} />
+          <Route path="/weatherIcons" element={<WheaterIcons />} />
+          <Route path="/flotCharts" element={<FlotCharts />} />
+          <Route path="/pietyCharts" element={<PietyCharts />} />
+          <Route path="/c3Charts" element={<C3Charts />} />
         </Routes>
       </div>
     </div>

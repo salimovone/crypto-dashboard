@@ -2,17 +2,18 @@ import { AiFillStar } from "react-icons/ai";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { checkBtnT, starBtnT } from "../../../redux/app/appSlice";
+import { useNavigate } from "react-router-dom";
 
 const TrashContent = () => {
   const dispatch = useDispatch()
   const trashList = useSelector((state) => state.app.trashList);
-
+  const navigate = useNavigate()
   return (
     <div className="w-full bg-[#fff5] overflow-x-scroll">
       <table cellPadding={15} className="w-full">
         <tbody>
           {trashList.map((item) => (
-            <tr key={item.id} className="border-b">
+            <tr key={item.id} className="border-b" onClick={()=>navigate('/profile', {state: item})}>
               <td>
                 <input
                   type="checkbox"
