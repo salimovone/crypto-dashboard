@@ -18,7 +18,7 @@ const ExchangeCrypto = () => {
   const [btnName, setBtnName] = useState("Buy");
   return (
     <div className="w-full mt-2 flex justify-between gap-5 flex-wrap">
-      <Transfer className="md:max-w-[330px] 2xl:max-w-[600px]">
+      <Transfer className="max-w-[330px]">
         <p className="cardTitle">Exchange Cryptocurrency</p>
         <p className="cardSubtitle">
           Transfer from one wallet to another within seconds. It's that simple.
@@ -68,7 +68,7 @@ const ExchangeCrypto = () => {
         <Button name={"Exchange Now"} margin={"10px 0px 20px 0px"} />
       </Transfer>
 
-      <WatchList className="md:max-w-[330px] 2xl:max-w-[600px]">
+      <WatchList className="max-w-[330px]">
         <div className="flex justify-between">
           <p className="cardTitle">Watch List</p>
           <a
@@ -96,7 +96,7 @@ const ExchangeCrypto = () => {
         </div>
       </WatchList>
 
-      <BuyCrypto className="md:max-w-[330px] 2xl:max-w-[600px]">
+      <BuyCrypto className="max-w-[330px]">
         <ul className="w-full bg-white p-[2px] rounded-lg">
           <Li
             color={btnName === "Buy" ? "white" : "black"}
