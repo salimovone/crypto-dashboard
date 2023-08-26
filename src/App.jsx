@@ -74,6 +74,7 @@ import WheaterIcons from "./views/Icons/WheaterIcons";
 import FlotCharts from "./views/Charts/FlotCharts";
 import PietyCharts from './views/Charts/PeityCharts';
 import C3Charts from './views/Charts/C3Charts'
+import UIKit from "./views/Components/UIKit";
 
 function App() {
   return (
@@ -157,6 +158,7 @@ function App() {
           <Route path="/flotCharts" element={<FlotCharts />} />
           <Route path="/pietyCharts" element={<PietyCharts />} />
           <Route path="/c3Charts" element={<C3Charts />} />
+          <Route path="/uiKit" element={<UIKit />} />
         </Routes>
       </div>
     </div>
