@@ -72,9 +72,10 @@ import Notification from "./views/Elements/Notification";
 import Lightbox from "./views/Elements/Lightbox";
 import WheaterIcons from "./views/Icons/WheaterIcons";
 import FlotCharts from "./views/Charts/FlotCharts";
-import PietyCharts from './views/Charts/PeityCharts';
-import C3Charts from './views/Charts/C3Charts'
+import PietyCharts from "./views/Charts/PeityCharts";
+import C3Charts from "./views/Charts/C3Charts";
 import UIKit from "./views/Components/UIKit";
+import HorizontalTimeline from "./views/HorizontalTimeline";
 
 function App() {
   return (
@@ -159,6 +160,7 @@ function App() {
           <Route path="/pietyCharts" element={<PietyCharts />} />
           <Route path="/c3Charts" element={<C3Charts />} />
           <Route path="/uiKit" element={<UIKit />} />
+          <Route path="/horizontalTimeline" element={<HorizontalTimeline />} />
         </Routes>
       </div>
     </div>
