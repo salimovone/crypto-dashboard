@@ -1,116 +1,23 @@
+import { BiArrowToRight } from "react-icons/bi";
+import { BiArrowToLeft } from "react-icons/bi";
 import { IoMdArrowDropdown } from "react-icons/io";
-import { BiDownArrowAlt } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import React, { useState } from 'react'
 import Navbar from '../../../components/Navbar'
 import { useDispatch, useSelector } from 'react-redux'
 import { deleteAlert } from "../../../redux/alerts/alertReducer";
-import { Fragment } from 'react'
-import { Menu, Transition } from '@headlessui/react'
-
-function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
-}
+import { dataDropDown, data, ProgressBar } from './data'
 
 export default () => {
 
     const alert = useSelector((state) => state.alerts.alerts)
     const dispatch = useDispatch()
-
     const [open, setOpen] = useState(false)
 
     const handleDelete = () => {
         dispatch(deleteAlert(open))
         setOpen(false)
     }
-
-    const data = [
-        {
-            id: 1,
-            title: "Primary",
-            style: "button_components_primary",
-            dropDown: "Action"
-        },
-        {
-            id: 2,
-            title: "Secondary",
-            style: "button_components_secondary",
-            dropDown: "Action"
-        },
-        {
-            id: 3,
-            title: "Success",
-            style: "button_components_primary",
-            dropDown: "Action"
-        },
-        {
-            id: 4,
-            title: "Danger",
-            style: "button_components_danger",
-            dropDown: "Action"
-        },
-        {
-            id: 5,
-            title: "Warning",
-            style: "button_components_warning",
-            dropDown: "Action"
-        },
-        {
-            id: 6,
-            title: "Info",
-            style: "button_components_primary",
-            dropDown: "Action"
-        },
-        {
-            id: 7,
-            title: "Light",
-            style: "button_components_light",
-        },
-        {
-            id: 8,
-            title: "Dark",
-            style: "button_components_dark",
-        },
-    ]
-
-    const dataDropDown = [
-        {
-            id: 1,
-            title: "Primary",
-            style: "button_components_primary",
-            dropDown: "Action"
-        },
-        {
-            id: 2,
-            title: "Secondary",
-            style: "button_components_secondary",
-            dropDown: "Action"
-        },
-        {
-            id: 3,
-            title: "Success",
-            style: "button_components_primary",
-            dropDown: "Action"
-        },
-        {
-            id: 4,
-            title: "Danger",
-            style: "button_components_danger",
-            dropDown: "Action"
-        },
-        {
-            id: 5,
-            title: "Warning",
-            style: "button_components_warning",
-            dropDown: "Action"
-        },
-        {
-            id: 6,
-            title: "Info",
-            style: "button_components_primary",
-            dropDown: "Action"
-        },
-    ]
 
     return (
         <>
@@ -231,7 +138,7 @@ export default () => {
                         </div>
                     </div>
 
-                    <div className="mt-5 border-b border-black pb-4">
+                    <div className="mt-5">
                         <div className="text-[18px] font-semibold">
                             <p>Split Button Dropdowns</p>
                         </div>
@@ -244,6 +151,72 @@ export default () => {
                                     </div>
                                 ))
                             }
+                        </div>
+                    </div>
+                </div>
+
+                <div className="payment_card grid gap-5 lg:grid-cols-2">
+                    {
+                        ProgressBar.map((item) => (
+                            <div key={item.id}>
+                                {item.Bars}
+                            </div>
+                        ))
+                    }
+                </div>
+
+                <div className="grid lg:grid-cols-2 gap-5">
+                    <div className="payment_card">
+                        <p className="font-bold text-[18px]">Pagination</p>
+
+                        <div className="flex gap-3 mt-5">
+                            <button className="text-[#35446F] font-medium">Previous</button>
+                            <button>1</button>
+                            <button className="w-[30px] h-[30px] bg-[#35446F] text-white">2</button>
+                            <button>3</button>
+                            <button className="text-[#35446F] font-medium">Next</button>
+                        </div>
+
+                        <div className="flex gap-2 mt-5">
+                            <button className="text-[#35446F] font-medium mt-1"><BiArrowToLeft /></button>
+                            <button>1</button>
+                            <button>2</button>
+                            <button>3</button>
+                            <button className="text-[#35446F] font-medium mt-1"><BiArrowToRight /></button>
+                        </div>
+
+                        <div className="flex gap-4 mt-5">
+                            <button className="text-[#35446F] font-medium text-[20px]">Previous</button>
+                            <button className="text-[18px]">1</button>
+                            <button className="w-[40px] text-[18px] h-[40px] bg-[#35446F] text-white">2</button>
+                            <button className="text-[18px]">3</button>
+                            <button className="text-[#35446F] text-[20px] font-medium">Next</button>
+                        </div>
+
+                        <div className="flex gap-3 mt-5">
+                            <button className="text-[14px] text-[#35446F] font-medium">Previous</button>
+                            <button className="text-[14px]">1</button>
+                            <button className="w-[30px] text-[14px] h-[30px] bg-[#35446F] text-white">2</button>
+                            <button className="text-[14px]">3</button>
+                            <button className="text-[14px] text-[#35446F] font-medium">Next</button>
+                        </div>
+                    </div>
+
+                    <div className="payment_card">
+                        <div>
+                            <p className="font-bold text-[18px]">Breadcrumbs</p>
+                        </div>
+                        
+                        <div className="text-gray-500">
+                            <p className="mt-2">Home</p>
+
+                            <div className="mt-2">
+                                <p className="text-blue-700 font-medium">Home <span className="text-gray-500">/ Products</span></p>
+                            </div>
+
+                            <div className="mt-2">
+                                <p className="text-blue-700 font-medium">Home / Products <span className="text-gray-500">/ Accessories</span></p>
+                            </div>
                         </div>
                     </div>
                 </div>

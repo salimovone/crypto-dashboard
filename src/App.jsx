@@ -76,6 +76,8 @@ import PietyCharts from "./views/Charts/PeityCharts";
 import C3Charts from "./views/Charts/C3Charts";
 import UIKit from "./views/Components/UIKit";
 import HorizontalTimeline from "./views/HorizontalTimeline";
+import Typography from "./views/Components/Typography";
+import Tabs from "./views/Components/Tabs";
 
 function App() {
   return (
@@ -161,6 +163,8 @@ function App() {
           <Route path="/c3Charts" element={<C3Charts />} />
           <Route path="/uiKit" element={<UIKit />} />
           <Route path="/horizontalTimeline" element={<HorizontalTimeline />} />
+          <Route path="/typography" element={<Typography />} />
+          <Route path="/tabs" element={<Tabs />} />
         </Routes>
       </div>
     </div>
