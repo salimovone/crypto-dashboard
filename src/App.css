@@ -215,7 +215,7 @@ NavLink:hover {
   border-radius: 8px;
 }
 
-.button_components_primary:hover{
+.button_components_primary:hover {
   background-color: #f62d51;
   transition: all 0.3s;
 }
@@ -244,17 +244,47 @@ NavLink:hover {
   border-radius: 8px;
 }
 
-.button_components_light{
+.button_components_light {
   border-color: #fff;
   background-color: #fff;
   border: 1px solid #fff;
   border-radius: 8px;
 }
 
-.button_components_dark{
+.button_components_dark {
   border-color: black;
   background-color: black;
   border: 1px solid black;
   color: white;
   border-radius: 8px;
+}
+
+.ProgressBarBg1 {
+  background: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-size: var(--bs-progress-height) var(--bs-progress-height);
+  background-color: #0D6EFD;
+}
+
+.ProgressBarBg2 {
+  background: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-size: var(--bs-progress-height) var(--bs-progress-height);
+  background-color: #2750E4;
+}
+
+.ProgressBarBg3 {
+  background: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-size: var(--bs-progress-height) var(--bs-progress-height);
+  background-color: #00D3C7;
+}
+
+.ProgressBarBg4 {
+  background: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-size: var(--bs-progress-height) var(--bs-progress-height);
+  background-color: #FFBC34;
+}
+
+.ProgressBarBg5 {
+  background: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-size: var(--bs-progress-height) var(--bs-progress-height);
+  background-color: #f62d51;
 }
