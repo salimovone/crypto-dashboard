@@ -19,8 +19,9 @@ import { AiFillAmazonCircle } from "react-icons/ai";
 import React from 'react'
 
 export default () => {
-
+    
     const data = [
+        { icon: <DiBitbucket /> },
         { icon: <BsFillAirplaneEnginesFill /> },
         { icon: <BsFillArrowDownSquareFill /> },
         { icon: <BsFillArrowRightCircleFill /> },
@@ -43,7 +44,6 @@ export default () => {
         { icon: <BsFillBadge8KFill /> },
         { icon: <DiAptana /> },
         { icon: <DiBlackberry /> },
-        { icon: <DiBitbucket /> },
         { icon: <BsFillAirplaneEnginesFill /> },
 
     ]

@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "../../../components/Navbar";
 import CustomValidation from "../../../components/FormsComponent/FormValidation/CustomValidation";
 import BrowserDefault from "../../../components/FormsComponent/FormValidation/BrowserDefault";
-import SupportedElements from "../../../components/FormsComponent/FormValidation/SupportedElements";
 import ServerSide from "../../../components/FormsComponent/FormValidation/ServerSide";
 import Tooltip from "../../../components/FormsComponent/FormValidation/Tooltip";
 
@@ -22,9 +21,6 @@ const FormValidation = () => {
         </div>
         <div>
           <ServerSide />
-        </div>
-        <div>
-          <SupportedElements />
         </div>
         <div>
           <Tooltip />

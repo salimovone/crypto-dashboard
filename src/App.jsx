@@ -87,6 +87,7 @@ import FileUpload from "./views/Forms/FileUpload";
 import DragAndDrop from "./views/Elements/DragAndDrop";
 import Typography from "./views/Components/Typography";
 import Tabs from "./views/Components/Tabs";
+import TypiconIcon from './views/Icons/TypiconIcons'
 
 function App() {
   return (
@@ -125,7 +126,7 @@ function App() {
           <Route path="/settings" element={<Settings />} />
           <Route path="/email" element={<Email />} />
           <Route path="/chat" element={<Chats />} />
-          <Route path="/typiconIcons" element={<Blank />} />
+          <Route path="/blankPage" element={<Blank />} />
           <Route path="/error500" element={<Page1 />} />
           <Route path="/error404" element={<Eror404 />} />
           <Route path="/login" element={<Login />} />
@@ -183,6 +184,7 @@ function App() {
           <Route path="/dragDrop" element={<DragAndDrop />} />
           <Route path="/typography" element={<Typography />} />
           <Route path="/tabs" element={<Tabs />} />
+          <Route path="/typiconIcons" element={<TypiconIcon />} />
         </Routes>
       </div>
     </div>

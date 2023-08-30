@@ -200,7 +200,7 @@ const Menus = [
       { title: "Lock Screen", link: "/lockScreen" },
       { title: "404 Error", link: "/error404" },
       { title: "500 Error", link: "/error500" },
-      { title: "Blank Page", link: "/typiconIcons" },
+      { title: "Blank Page", link: "/blankPage" },
     ],
   },
   {

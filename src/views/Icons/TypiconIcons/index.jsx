@@ -21,15 +21,15 @@ import React from 'react'
 export default () => {
 
     const data = [
+        { icon: <AiFillAudio /> },
+        { icon: <AiFillAppstore /> },
         { icon: <BsFillAirplaneEnginesFill /> },
         { icon: <BsFillArrowDownSquareFill /> },
         { icon: <BsFillArrowRightCircleFill /> },
         { icon: <BsFillArrowThroughHeartFill /> },
         { icon: <AiFillAmazonCircle /> },
-        { icon: <AiFillAudio /> },
         { icon: <AiFillAmazonSquare /> },
         { icon: <AiFillBank /> },
-        { icon: <AiFillAppstore /> },
         { icon: <BsFillAirplaneEnginesFill /> },
         { icon: <BsFillAlarmFill /> },
         { icon: <BsFillArrowDownLeftSquareFill /> },

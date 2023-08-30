@@ -19,30 +19,30 @@ import { AiFillAmazonCircle } from "react-icons/ai";
 import React from 'react'
 
 export default () => {
-
+    
     const data = [
+        { icon: <DiBlackberry /> },
+        { icon: <AiFillBank /> },
+        { icon: <AiFillAmazonSquare /> },
         { icon: <BsFillAirplaneEnginesFill /> },
         { icon: <BsFillArrowDownSquareFill /> },
         { icon: <BsFillArrowRightCircleFill /> },
         { icon: <BsFillArrowThroughHeartFill /> },
         { icon: <AiFillAmazonCircle /> },
         { icon: <AiFillAudio /> },
-        { icon: <AiFillAmazonSquare /> },
+        { icon: <BsFillArrowDownLeftSquareFill /> },
         { icon: <AiFillBank /> },
         { icon: <AiFillAppstore /> },
         { icon: <BsFillAirplaneEnginesFill /> },
         { icon: <BsFillAlarmFill /> },
-        { icon: <BsFillArrowDownLeftSquareFill /> },
         { icon: <AiFillAudio /> },
         { icon: <AiFillAmazonSquare /> },
-        { icon: <AiFillBank /> },
         { icon: <AiFillAppstore /> },
         { icon: <BsFillAspectRatioFill /> },
         { icon: <BsFillBackspaceReverseFill /> },
         { icon: <BsFillAwardFill /> },
         { icon: <BsFillBadge8KFill /> },
         { icon: <DiAptana /> },
-        { icon: <DiBlackberry /> },
         { icon: <DiBitbucket /> },
         { icon: <BsFillAirplaneEnginesFill /> },
 
