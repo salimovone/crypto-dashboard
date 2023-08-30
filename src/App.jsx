@@ -85,6 +85,8 @@ import FormValidation from "./views/Forms/FormValidation";
 import FormSelect from "./views/Forms/FormSelect";
 import FileUpload from "./views/Forms/FileUpload";
 import DragAndDrop from "./views/Elements/DragAndDrop";
+import Typography from "./views/Components/Typography";
+import Tabs from "./views/Components/Tabs";
 
 function App() {
   return (
@@ -179,6 +181,8 @@ function App() {
           <Route path="/formSelect2" element={<FormSelect />} />
           <Route path="/fileUpload" element={<FileUpload />} />
           <Route path="/dragDrop" element={<DragAndDrop />} />
+          <Route path="/typography" element={<Typography />} />
+          <Route path="/tabs" element={<Tabs />} />
         </Routes>
       </div>
     </div>
