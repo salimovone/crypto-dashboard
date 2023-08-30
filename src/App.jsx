@@ -76,6 +76,15 @@ import PietyCharts from "./views/Charts/PeityCharts";
 import C3Charts from "./views/Charts/C3Charts";
 import UIKit from "./views/Components/UIKit";
 import HorizontalTimeline from "./views/HorizontalTimeline";
+import BasicInput from "./views/Forms/BasicInput";
+import InputGroup from "./views/Forms/InputGroup";
+import HorizontalForm from "./views/Forms/HorizontalForm";
+import VerticalForm from "./views/Forms/VerticalForm";
+import FormMask from "./views/Forms/FormMask";
+import FormValidation from "./views/Forms/FormValidation";
+import FormSelect from "./views/Forms/FormSelect";
+import FileUpload from "./views/Forms/FileUpload";
+import DragAndDrop from "./views/Elements/DragAndDrop";
 import Typography from "./views/Components/Typography";
 import Tabs from "./views/Components/Tabs";
 
@@ -163,6 +172,15 @@ function App() {
           <Route path="/c3Charts" element={<C3Charts />} />
           <Route path="/uiKit" element={<UIKit />} />
           <Route path="/horizontalTimeline" element={<HorizontalTimeline />} />
+          <Route path="/basicInputs" element={<BasicInput />} />
+          <Route path="/inputGroups" element={<InputGroup />} />
+          <Route path="/horizontalForm" element={<HorizontalForm />} />
+          <Route path="/verticalForm" element={<VerticalForm />} />
+          <Route path="/formMask" element={<FormMask />} />
+          <Route path="/formValidation" element={<FormValidation />} />
+          <Route path="/formSelect2" element={<FormSelect />} />
+          <Route path="/fileUpload" element={<FileUpload />} />
+          <Route path="/dragDrop" element={<DragAndDrop />} />
           <Route path="/typography" element={<Typography />} />
           <Route path="/tabs" element={<Tabs />} />
         </Routes>
