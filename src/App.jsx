@@ -1,3 +1,6 @@
+//   conflictni yechib bolganilada comment larni o'chirvorilar!!!
+
+
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import SideBar from "./components/Sidebar";
@@ -11,8 +14,8 @@ import Search from "./views/Transactions/SearchTransaction";
 import SingleTransaction from "./views/Transactions/SingleTransaction";
 import Wallet from "./views/Wallet";
 import Settings from "./views/Settings";
-import Email from "./views/Email";
-import Chats from "./views/Chats";
+import Email from "./views/Apps/Email"; //shu qator qolsin
+import Chats from "./views/Apps/Chats"; //shu qator qolsin
 import EmployeeList from "./views/Employee/EmployeeList";
 import AddEmployee from "./components/Employee/AddEmployee";
 import Blank from "./views/Pages/Blank";
@@ -23,7 +26,7 @@ import Forget from "./views/Pages/ForgetPassword";
 import Register from "./views/Pages/Register";
 import LookScreen from "./views/Pages/LookScreen";
 import ChangePassword from "./views/Pages/ChangePassword";
-import Profile from "./views/Pages/Profile";
+import Profile from "./views/Pages/Profile"; //shu profile pageni navbar bn routesdan olib tashlelar!!!
 import Payments from "./views/Accounts/Payments";
 import Invoices from "./views/Accounts/Invoices";
 import Taxes from "./views/Accounts/Taxes";

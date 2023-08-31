@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "../../components/Navbar";
-import AppSidebar from "../../components/appElements/AppSidebar";
-import Searchbar from "../../components/appElements/Searchbar";
-import EmailContent from "../../components/appElements/EmailContent";
+import Navbar from "../../../components/Navbar";
+import AppSidebar from "../../../components/appElements/AppSidebar";
+import Searchbar from "../../../components/appElements/Searchbar";
+import EmailContent from "../../../components/appElements/EmailContent";
 import { useSelector } from "react-redux";
-import TrashContent from "../../components/appElements/TrashContent";
+import TrashContent from "../../../components/appElements/TrashContent";
 
 const Email = () => {
   const pageName = useSelector((state) => state.app.pageName);
@@ -28,3 +28,6 @@ const Email = () => {
 };
 
 export default Email;
+
+
+//image name job

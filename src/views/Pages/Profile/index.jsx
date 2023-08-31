@@ -1,7 +1,6 @@
 import { AiOutlinePlus } from "react-icons/ai";
 import React, { useState } from 'react'
 import Navbar from "../../../components/Navbar";
-import img1 from '../../../assets/img/img1.jpg'
 import { useLocation } from "react-router-dom";
 
 export default () => {
@@ -9,16 +8,8 @@ export default () => {
     const [just, setJust] = useState(0)
     const location = useLocation()
 
-    let data;
-    if(location.state.image){
-        data = location.state
-    }else{
-        data = {
-            image: img1,
-            name: 'Cristina Groves',
-            job: 'staff'
-        }
-    }
+    let data = location.state
+
 
     return (
         <>
