@@ -40,6 +40,10 @@
   width: 100%;
   height: 95%;
   padding: 20px;
+
+  .recharts-dot {
+    display: none;
+  }
 }
 
 .img1 {
@@ -50,9 +54,7 @@
   filter: invert(1) brightness(100);
 }
 
-.recharts-dot {
-  display: none;
-}
+
 
 .box_login {
   background: linear-gradient(51.64deg,
@@ -150,14 +152,20 @@ NavLink:hover {
 .Shadow {
   box-shadow: 0 4px 9px #e1ecff, inset 0 0 15px rgba(255, 255, 255, 0.35);
 }
+
 .employee_table td {
   padding: 15px 20px;
 }
+
 .payment_card {
   padding: 15px;
   margin-bottom: 30px;
-  background: linear-gradient(51.64deg, rgba(255, 255, 255, 0) 34.2%, rgba(255, 255, 255, 0.2) 97.35%, rgba(255, 255, 255, 0) 160.66%), rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 9px #e1ecff, inset 0 0 15px rgba(255, 255, 255, .35);
+  background: linear-gradient(51.64deg,
+      rgba(255, 255, 255, 0) 34.2%,
+      rgba(255, 255, 255, 0.2) 97.35%,
+      rgba(255, 255, 255, 0) 160.66%),
+    rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 9px #e1ecff, inset 0 0 15px rgba(255, 255, 255, 0.35);
   border-radius: 5px;
 }
 
@@ -168,10 +176,12 @@ NavLink:hover {
 .holiday_table td {
   padding: 15px 0px;
 }
+
 .tooltip {
   position: relative;
   display: inline-block;
 }
+
 .tooltiptext {
   font-size: 13px;
   display: none;
@@ -183,13 +193,98 @@ NavLink:hover {
   position: absolute;
   z-index: 1;
 }
-.tooltip:hover > .tooltiptext {
+
+.tooltip:hover>.tooltiptext {
   display: block;
 }
+
 .Slider {
   background: red !important;
   color: red !important;
 }
+
 .Tables_bg {
-  background: rgba(255,255,255,.2);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.button_components_primary {
+  border-color: transparent;
+  background-color: #234ce3;
+  border: 1px solid transparent;
+  color: white;
+  border-radius: 8px;
+}
+
+.button_components_primary:hover {
+  background-color: #f62d51;
+  transition: all 0.3s;
+}
+
+.button_components_secondary {
+  border-color: transparent;
+  background-color: #6c757d;
+  border: 1px solid transparent;
+  color: white;
+  border-radius: 8px;
+}
+
+.button_components_danger {
+  border-color: #f62d51;
+  background-color: #f62d51;
+  border: 1px solid #f62d51;
+  color: white;
+  border-radius: 8px;
+}
+
+.button_components_warning {
+  border-color: #ffbc34;
+  background-color: #ffbc34;
+  border: 1px solid #ffbc34;
+  color: white;
+  border-radius: 8px;
+}
+
+.button_components_light {
+  border-color: #fff;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
+
+.button_components_dark {
+  border-color: black;
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  border-radius: 8px;
+}
+
+.ProgressBarBg1 {
+  background: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-size: var(--bs-progress-height) var(--bs-progress-height);
+  background-color: #0D6EFD;
+}
+
+.ProgressBarBg2 {
+  background: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-size: var(--bs-progress-height) var(--bs-progress-height);
+  background-color: #2750E4;
+}
+
+.ProgressBarBg3 {
+  background: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-size: var(--bs-progress-height) var(--bs-progress-height);
+  background-color: #00D3C7;
+}
+
+.ProgressBarBg4 {
+  background: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-size: var(--bs-progress-height) var(--bs-progress-height);
+  background-color: #FFBC34;
+}
+
+.ProgressBarBg5 {
+  background: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-size: var(--bs-progress-height) var(--bs-progress-height);
+  background-color: #f62d51;
 }

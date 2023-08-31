@@ -43,7 +43,7 @@ export default () => {
           open ? "block" : "hidden"
         }`}
       >
-        <NavLink to={"/profile"}>Profile</NavLink>
+        <NavLink to={"/"}>Profile</NavLink>
         <NavLink to={"/editProfile"}>Edit Profile</NavLink>
         <NavLink to={"/settings"}>Setting</NavLink>
         <NavLink to={"/login"}>Log out</NavLink>

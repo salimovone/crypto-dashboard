@@ -8,6 +8,8 @@ import taxesSlice from "./taxesList/taxesReducers";
 import leaveSlice from "./leaveList/leaveReducer";
 import holidaySlice from "./holiday/holidayReducer";
 import reportSlice from "./invoiceReport/invoiceReducer";
+import AlertSlice from "./alerts/alertReducer";
+import rolesSlice from "./Roles/RoleReducer";
 
 export const store = configureStore({
   reducer: {
@@ -20,5 +22,7 @@ export const store = configureStore({
     leaveList: leaveSlice,
     holidayList: holidaySlice,
     report: reportSlice,
+    alerts: AlertSlice,
+    roles: rolesSlice
   },
 });

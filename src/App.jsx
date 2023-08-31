@@ -52,13 +52,45 @@ import InvoiceReport from "./views/Reports/InvoiceReport";
 import FontawesomeIcon from "./views/Icons/FontawesomeIcon";
 import FatherIcons from "./views/Icons/FatherIcons";
 import IonicIcons from "./views/Icons/IonicIcons";
-import MaterialIcons from './views/Icons/MaterialIcons';
-import Pe7Icons from './views/Icons/Pe7Icons';
-import SimplelineIcons from './views/Icons/SimplelineIcons';
-import ThemifyIcons from './views/Icons/ThemifyIcons'
-import FlagIcons from './views/Icons/FlagIcons'
+import MaterialIcons from "./views/Icons/MaterialIcons";
+import Pe7Icons from "./views/Icons/Pe7Icons";
+import SimplelineIcons from "./views/Icons/SimplelineIcons";
+import ThemifyIcons from "./views/Icons/ThemifyIcons";
+import FlagIcons from "./views/Icons/FlagIcons";
 import BasicTable from "./views/Tables/BasicTable";
 import DataTable from "./views/Tables/DataTable";
+import ScrollBar from "./views/Elements/ScrollBar";
+import RangeSlider from "./views/Elements/RangeSlider";
+import TimeLine from "./views/Elements/TimeLine";
+import WizardForm from "./views/Elements/WizardForm";
+import StickyNotes from "./views/Elements/StikyNotes";
+import Clipboard from "./views/Elements/Clipboard";
+import MorrisCharts from "./views/Charts/MorrisCharts";
+import Am4Charts from "./views/Charts/Am4Charts";
+import ApexCharts from "./views/Charts/ApexCharts";
+import ChartJs from "./views/Charts/ChartJs";
+import TextEditor from "./views/Elements/TextEditor";
+import Counter from "./views/Elements/Counter";
+import Notification from "./views/Elements/Notification";
+import Lightbox from "./views/Elements/Lightbox";
+import WheaterIcons from "./views/Icons/WheaterIcons";
+import FlotCharts from "./views/Charts/FlotCharts";
+import PietyCharts from "./views/Charts/PeityCharts";
+import C3Charts from "./views/Charts/C3Charts";
+import UIKit from "./views/Components/UIKit";
+import HorizontalTimeline from "./views/HorizontalTimeline";
+import BasicInput from "./views/Forms/BasicInput";
+import InputGroup from "./views/Forms/InputGroup";
+import HorizontalForm from "./views/Forms/HorizontalForm";
+import VerticalForm from "./views/Forms/VerticalForm";
+import FormMask from "./views/Forms/FormMask";
+import FormValidation from "./views/Forms/FormValidation";
+import FormSelect from "./views/Forms/FormSelect";
+import FileUpload from "./views/Forms/FileUpload";
+import DragAndDrop from "./views/Elements/DragAndDrop";
+import Typography from "./views/Components/Typography";
+import Tabs from "./views/Components/Tabs";
+import TypiconIcon from './views/Icons/TypiconIcons'
 
 function App() {
   return (
@@ -92,23 +124,12 @@ function App() {
           <Route path="/Rating" element={<Rating />} />
           <Route path="/toastr" element={<Toastr />} />
           <Route path="/spinner" element={<Loader />} />
+          <Route path="/scrollbar" element={<ScrollBar />} />
+          <Route path="/rangeSlider" element={<RangeSlider />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/email" element={<Email />} />
           <Route path="/chat" element={<Chats />} />
-          <Route path="/typiconIcons" element={<Blank/>} />
-          <Route path="/error500" element={<Page1/>} />
-          <Route path="/error404" element={<Eror404/>}/>
-          <Route path="/login" element={<Login/>}/>
-          <Route path="/forgotPassword" element={<Forget/>}/>
-          <Route path="/register" element={<Register/>}/>
-          <Route path="/lockScreen" element={<LookScreen/>}/>
-          <Route path="/changePassword" element={<ChangePassword/>} />
-          <Route path="/profile" element={<Profile/>}/>
-          <Route path="/payments" element={<Payments/>}/>
-          <Route path="/invoices" element={<Invoices/>} />
-          <Route path="/taces" element={<Taxes/>}/>
-          <Route path="/TaxesAddUsers" element={<AddUsers/>}/>
-          <Route path="/typiconIcons" element={<Blank />} />
+          <Route path="/blankPage" element={<Blank />} />
           <Route path="/error500" element={<Page1 />} />
           <Route path="/error404" element={<Eror404 />} />
           <Route path="/login" element={<Login />} />
@@ -116,23 +137,57 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/lockScreen" element={<LookScreen />} />
           <Route path="/changePassword" element={<ChangePassword />} />
+          <Route path="/payments" element={<Payments />} />
+          <Route path="/invoices" element={<Invoices />} />
+          <Route path="/taces" element={<Taxes />} />
+          <Route path="/TaxesAddUsers" element={<AddUsers />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/expenses" element={<Expences/>}/>
-          <Route path="/providentFunt" element={<ProvidentFund/>} />
-          <Route path="/employeeSalary" element={<EmloyeeSolory/>}/>
-          <Route path="/payslip" element={<Payslip/>}/>
-          <Route path="/expenseReport" element={<ExpenceReport/>} />
-          <Route path="/invoiceReport" element={<InvoiceReport/>} />
-          <Route path="/fontawesomeIcons" element={<FontawesomeIcon/>}/>
-          <Route path="/featherIcons" element={<FatherIcons/>}/>
-          <Route path="/ionicIcons" element={<IonicIcons/>} />
-          <Route path="/materialIcons" element={<MaterialIcons/>}/>
-          <Route path="/pe7Icons" element={<Pe7Icons/>} />
-          <Route path="/simplelineIcons" element={<SimplelineIcons/>} />
-          <Route path="/themifyIcons" element={<ThemifyIcons/>} />
-          <Route path="/flagIcons" element={<FlagIcons/>} />
-          <Route path="/basicTable" element={<BasicTable/>} />
-          <Route path="/dataTable" element={<DataTable/>} />
+          <Route path="/expenses" element={<Expences />} />
+          <Route path="/providentFunt" element={<ProvidentFund />} />
+          <Route path="/employeeSalary" element={<EmloyeeSolory />} />
+          <Route path="/payslip" element={<Payslip />} />
+          <Route path="/expenseReport" element={<ExpenceReport />} />
+          <Route path="/invoiceReport" element={<InvoiceReport />} />
+          <Route path="/fontawesomeIcons" element={<FontawesomeIcon />} />
+          <Route path="/featherIcons" element={<FatherIcons />} />
+          <Route path="/ionicIcons" element={<IonicIcons />} />
+          <Route path="/materialIcons" element={<MaterialIcons />} />
+          <Route path="/pe7Icons" element={<Pe7Icons />} />
+          <Route path="/simplelineIcons" element={<SimplelineIcons />} />
+          <Route path="/themifyIcons" element={<ThemifyIcons />} />
+          <Route path="/flagIcons" element={<FlagIcons />} />
+          <Route path="/basicTable" element={<BasicTable />} />
+          <Route path="/dataTable" element={<DataTable />} />
+          <Route path="/timeLine" element={<TimeLine />} />
+          <Route path="/formWizard" element={<WizardForm />} />
+          <Route path="/stikyNote" element={<StickyNotes />} />
+          <Route path="/clipboard" element={<Clipboard />} />
+          <Route path="/morrisChart" element={<MorrisCharts />} />
+          <Route path="/am4charts" element={<Am4Charts />} />
+          <Route path="/apexCharts" element={<ApexCharts />} />
+          <Route path="/chartsJs" element={<ChartJs />} />
+          <Route path="/textEditor" element={<TextEditor />} />
+          <Route path="/counter" element={<Counter />} />
+          <Route path="/notification" element={<Notification />} />
+          <Route path="/lightbox" element={<Lightbox />} />
+          <Route path="/weatherIcons" element={<WheaterIcons />} />
+          <Route path="/flotCharts" element={<FlotCharts />} />
+          <Route path="/pietyCharts" element={<PietyCharts />} />
+          <Route path="/c3Charts" element={<C3Charts />} />
+          <Route path="/uiKit" element={<UIKit />} />
+          <Route path="/horizontalTimeline" element={<HorizontalTimeline />} />
+          <Route path="/basicInputs" element={<BasicInput />} />
+          <Route path="/inputGroups" element={<InputGroup />} />
+          <Route path="/horizontalForm" element={<HorizontalForm />} />
+          <Route path="/verticalForm" element={<VerticalForm />} />
+          <Route path="/formMask" element={<FormMask />} />
+          <Route path="/formValidation" element={<FormValidation />} />
+          <Route path="/formSelect2" element={<FormSelect />} />
+          <Route path="/fileUpload" element={<FileUpload />} />
+          <Route path="/dragDrop" element={<DragAndDrop />} />
+          <Route path="/typography" element={<Typography />} />
+          <Route path="/tabs" element={<Tabs />} />
+          <Route path="/typiconIcons" element={<TypiconIcon />} />
         </Routes>
       </div>
     </div>

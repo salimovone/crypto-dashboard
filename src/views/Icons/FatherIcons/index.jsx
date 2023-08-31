@@ -21,14 +21,16 @@ import React from 'react'
 export default () => {
 
     const data = [
+        { icon: <BsFillAwardFill /> },
+        { icon: <BsFillBadge8KFill /> },
+        { icon: <DiAptana /> },
+        { icon: <DiBlackberry /> },
+        { icon: <DiBitbucket /> },
+        { icon: <BsFillAirplaneEnginesFill /> },
         { icon: <BsFillAirplaneEnginesFill /> },
         { icon: <BsFillArrowDownSquareFill /> },
-        { icon: <BsFillArrowRightCircleFill /> },
-        { icon: <BsFillArrowThroughHeartFill /> },
-        { icon: <AiFillAmazonCircle /> },
-        { icon: <AiFillAudio /> },
-        { icon: <AiFillAmazonSquare /> },
         { icon: <AiFillBank /> },
+        { icon: <BsFillArrowRightCircleFill /> },
         { icon: <AiFillAppstore /> },
         { icon: <BsFillAirplaneEnginesFill /> },
         { icon: <BsFillAlarmFill /> },
@@ -37,15 +39,12 @@ export default () => {
         { icon: <AiFillAmazonSquare /> },
         { icon: <AiFillBank /> },
         { icon: <AiFillAppstore /> },
+        { icon: <BsFillArrowThroughHeartFill /> },
+        { icon: <AiFillAmazonCircle /> },
+        { icon: <AiFillAudio /> },
+        { icon: <AiFillAmazonSquare /> },
         { icon: <BsFillAspectRatioFill /> },
         { icon: <BsFillBackspaceReverseFill /> },
-        { icon: <BsFillAwardFill /> },
-        { icon: <BsFillBadge8KFill /> },
-        { icon: <DiAptana /> },
-        { icon: <DiBlackberry /> },
-        { icon: <DiBitbucket /> },
-        { icon: <BsFillAirplaneEnginesFill /> },
-
     ]
 
     return (

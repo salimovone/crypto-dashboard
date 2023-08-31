@@ -21,6 +21,10 @@ import React from 'react'
 export default () => {
 
     const data = [
+        { icon: <DiAptana /> },
+        { icon: <DiBlackberry /> },
+        { icon: <DiBitbucket /> },
+        { icon: <BsFillAirplaneEnginesFill /> },
         { icon: <AiFillAmazonCircle /> },
         { icon: <AiFillAudio /> },
         { icon: <AiFillAmazonSquare /> },
@@ -41,10 +45,6 @@ export default () => {
         { icon: <BsFillBackspaceReverseFill /> },
         { icon: <BsFillAwardFill /> },
         { icon: <BsFillBadge8KFill /> },
-        { icon: <DiAptana /> },
-        { icon: <DiBlackberry /> },
-        { icon: <DiBitbucket /> },
-        { icon: <BsFillAirplaneEnginesFill /> },
 
     ]
 
