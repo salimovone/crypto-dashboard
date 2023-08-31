@@ -13,7 +13,7 @@ const EmailContent = () => {
       <table cellPadding={15} className="w-full">
         <tbody>
           {emailUserList.map((item) => (
-            <tr key={item.id} className="border-b" onClick={()=>navigate('/profile', {state: item})}>
+            <tr key={item.id} className="border-b" onClick={()=>navigate('/profile', {state: {...item, profileCheck: true}})}>
               <td>
                 <input
                   type="checkbox"
