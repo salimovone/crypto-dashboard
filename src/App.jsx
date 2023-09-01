@@ -192,7 +192,7 @@ function App() {
           <Route path="/typiconIcons" element={<TypiconIcon />} />
           <Route path="/voiceCall" element={<VoiceCalls />} />
           <Route path="/videoCall" element={<VideoCalls />} />
-          {/* <Route path="/calendar" element={<Calendar />} /> */}
+          <Route path="/calendar" element={<Calendar />} />
         </Routes>
       </div>
     </div>
