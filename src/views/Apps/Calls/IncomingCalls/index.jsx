@@ -18,10 +18,10 @@ export default () => {
                             <div>
                                 <div className='mt-2'>
                                     <p className='text-[#35446F] text-[23px] font-bold'>Bernardo James</p>
-                                    <p className='text-blue-700 font-semibold'>Senior Developer</p>
+                                    <p className='text-blue-700 font-semibold'>Senior Developper</p>
                                 </div>
                                 <div className='mt-5 text-[#35446F] font-semibold'>
-                                    <p>Calling...</p>
+                                    <p>Calling....</p>
                                 </div>
 
                                 <div className='mt-5 flex justify-center gap-5'>
