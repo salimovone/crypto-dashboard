@@ -288,3 +288,11 @@ NavLink:hover {
   background-size: var(--bs-progress-height) var(--bs-progress-height);
   background-color: #f62d51;
 }
+
+.CallsVoice {
+  margin-bottom: 30px !important;
+  border: 1px solid white;
+  background: linear-gradient(51.64deg, rgba(255, 255, 255, 0) 34.2%, rgba(255, 255, 255, 0.2) 97.35%, rgba(255, 255, 255, 0) 160.66%), rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 9px #e1ecff, inset 0 0 15px rgba(255, 255, 255, .35);
+  border-radius: 5px;
+}
