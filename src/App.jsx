@@ -89,7 +89,9 @@ import FileUpload from "./views/Forms/FileUpload";
 import DragAndDrop from "./views/Elements/DragAndDrop";
 import Typography from "./views/Components/Typography";
 import Tabs from "./views/Components/Tabs";
-import TypiconIcon from "./views/Icons/TypiconIcons";
+import TypiconIcon from './views/Icons/TypiconIcons';
+import VoiceCalls from './views/Apps/Calls/VoiceCalls'
+import VideoCalls from "./views/Apps/Calls/VideoCalls"
 import Calendar from "./views/Apps/Calendar";
 
 function App() {
@@ -188,6 +190,8 @@ function App() {
           <Route path="/typography" element={<Typography />} />
           <Route path="/tabs" element={<Tabs />} />
           <Route path="/typiconIcons" element={<TypiconIcon />} />
+          <Route path="/voiceCall" element={<VoiceCalls />} />
+          <Route path="/videoCall" element={<VideoCalls />} />
           {/* <Route path="/calendar" element={<Calendar />} /> */}
         </Routes>
       </div>
