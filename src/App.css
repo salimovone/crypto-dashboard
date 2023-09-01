@@ -27,10 +27,12 @@
 }
 
 .transaction_card {
-  background: linear-gradient(51.64deg,
+  background: linear-gradient(
+      51.64deg,
       rgba(255, 255, 255, 0) 34.2%,
       rgba(255, 255, 255, 0.2) 97.35%,
-      rgba(255, 255, 255, 0) 160.66%),
+      rgba(255, 255, 255, 0) 160.66%
+    ),
     rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 9px #e1ecff, inset 0 0 15px rgba(255, 255, 255, 0.35);
   border-radius: 5px;
@@ -54,13 +56,13 @@
   filter: invert(1) brightness(100);
 }
 
-
-
 .box_login {
-  background: linear-gradient(51.64deg,
+  background: linear-gradient(
+      51.64deg,
       rgba(255, 255, 255, 0) 34.2%,
       rgba(255, 255, 255, 0.2) 97.35%,
-      rgba(255, 255, 255, 0) 160.66%),
+      rgba(255, 255, 255, 0) 160.66%
+    ),
     rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 9px #e1ecff, inset 0 0 15px rgba(255, 255, 255, 0.35);
   margin: 0 auto;
@@ -79,10 +81,12 @@
   margin-bottom: 30px;
   padding: 20px;
   position: relative;
-  background: linear-gradient(51.64deg,
+  background: linear-gradient(
+      51.64deg,
       rgba(255, 255, 255, 0) 34.2%,
       rgba(255, 255, 255, 0.2) 97.35%,
-      rgba(255, 255, 255, 0) 160.66%),
+      rgba(255, 255, 255, 0) 160.66%
+    ),
     rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 9px #e1ecff, inset 0 0 15px rgb(255 255 255/35%);
   border-radius: 5px;
@@ -98,14 +102,17 @@
   --bs-nav-tabs-link-active-color: #495057;
   --bs-nav-tabs-link-active-bg: #fff;
   --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #fff;
-  border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
+  border-bottom: var(--bs-nav-tabs-border-width) solid
+    var(--bs-nav-tabs-border-color);
 }
 
 .container2 {
-  background: linear-gradient(51.64deg,
+  background: linear-gradient(
+      51.64deg,
       rgba(255, 255, 255, 0) 34.2%,
       rgba(255, 255, 255, 0.2) 97.35%,
-      rgba(255, 255, 255, 0) 160.66%),
+      rgba(255, 255, 255, 0) 160.66%
+    ),
     rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 9px #e1ecff, inset 0 0 15px rgba(255, 255, 255, 0.35);
   border-radius: 5px;
@@ -114,10 +121,12 @@
 }
 
 .ssss {
-  background: linear-gradient(51.64deg,
+  background: linear-gradient(
+      51.64deg,
       rgba(255, 255, 255, 0) 34.2%,
       rgba(255, 255, 255, 0.2) 97.35%,
-      rgba(255, 255, 255, 0) 160.66%),
+      rgba(255, 255, 255, 0) 160.66%
+    ),
     rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 9px #e1ecff, inset 0 0 15px rgb(255 255 255/35%);
   border-radius: 5px;
@@ -160,10 +169,12 @@ NavLink:hover {
 .payment_card {
   padding: 15px;
   margin-bottom: 30px;
-  background: linear-gradient(51.64deg,
+  background: linear-gradient(
+      51.64deg,
       rgba(255, 255, 255, 0) 34.2%,
       rgba(255, 255, 255, 0.2) 97.35%,
-      rgba(255, 255, 255, 0) 160.66%),
+      rgba(255, 255, 255, 0) 160.66%
+    ),
     rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 9px #e1ecff, inset 0 0 15px rgba(255, 255, 255, 0.35);
   border-radius: 5px;
@@ -194,7 +205,7 @@ NavLink:hover {
   z-index: 1;
 }
 
-.tooltip:hover>.tooltiptext {
+.tooltip:hover > .tooltiptext {
   display: block;
 }
 
@@ -260,31 +271,76 @@ NavLink:hover {
 }
 
 .ProgressBarBg1 {
-  background: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
   background-size: var(--bs-progress-height) var(--bs-progress-height);
-  background-color: #0D6EFD;
+  background-color: #0d6efd;
 }
 
 .ProgressBarBg2 {
-  background: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
   background-size: var(--bs-progress-height) var(--bs-progress-height);
-  background-color: #2750E4;
+  background-color: #2750e4;
 }
 
 .ProgressBarBg3 {
-  background: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
   background-size: var(--bs-progress-height) var(--bs-progress-height);
-  background-color: #00D3C7;
+  background-color: #00d3c7;
 }
 
 .ProgressBarBg4 {
-  background: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
   background-size: var(--bs-progress-height) var(--bs-progress-height);
-  background-color: #FFBC34;
+  background-color: #ffbc34;
 }
 
 .ProgressBarBg5 {
-  background: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
   background-size: var(--bs-progress-height) var(--bs-progress-height);
   background-color: #f62d51;
 }

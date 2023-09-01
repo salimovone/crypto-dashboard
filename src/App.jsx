@@ -1,6 +1,5 @@
 //   conflictni yechib bolganilada comment larni o'chirvorilar!!!
 
-
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import SideBar from "./components/Sidebar";
@@ -90,7 +89,8 @@ import FileUpload from "./views/Forms/FileUpload";
 import DragAndDrop from "./views/Elements/DragAndDrop";
 import Typography from "./views/Components/Typography";
 import Tabs from "./views/Components/Tabs";
-import TypiconIcon from './views/Icons/TypiconIcons'
+import TypiconIcon from "./views/Icons/TypiconIcons";
+import Calendar from "./views/Apps/Calendar";
 
 function App() {
   return (
@@ -188,6 +188,7 @@ function App() {
           <Route path="/typography" element={<Typography />} />
           <Route path="/tabs" element={<Tabs />} />
           <Route path="/typiconIcons" element={<TypiconIcon />} />
+          {/* <Route path="/calendar" element={<Calendar />} /> */}
         </Routes>
       </div>
     </div>
