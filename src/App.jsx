@@ -1,6 +1,5 @@
 //   conflictni yechib bolganilada comment larni o'chirvorilar!!!
 
-
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import SideBar from "./components/Sidebar";
@@ -92,7 +91,8 @@ import Typography from "./views/Components/Typography";
 import Tabs from "./views/Components/Tabs";
 import TypiconIcon from './views/Icons/TypiconIcons';
 import VoiceCalls from './views/Apps/Calls/VoiceCalls'
-import VideoCalls from "./views/Apps/Calls/VideoCalls";
+import VideoCalls from "./views/Apps/Calls/VideoCalls"
+import Calendar from "./views/Apps/Calendar";
 
 function App() {
   return (
@@ -192,6 +192,7 @@ function App() {
           <Route path="/typiconIcons" element={<TypiconIcon />} />
           <Route path="/voiceCall" element={<VoiceCalls />} />
           <Route path="/videoCall" element={<VideoCalls />} />
+          {/* <Route path="/calendar" element={<Calendar />} /> */}
         </Routes>
       </div>
     </div>
