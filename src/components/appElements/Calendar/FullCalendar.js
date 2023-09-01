@@ -8,8 +8,7 @@ export default () => {
   };
 
   return (
-    <div >
-      
+    <div className="calendar">
       <FullCalendar
         plugins={[dayGridPlugin, interactionPlugin]}
         initialView="dayGridMonth"

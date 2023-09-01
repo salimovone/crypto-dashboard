@@ -25,7 +25,7 @@ export default () => {
       ]);
   };
   return (
-    <div >
+    <div className="calendar">
       <Calendar
         views={["day", "agenda", "work_week", "month"]}
         selectable

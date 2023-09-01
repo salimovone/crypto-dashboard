@@ -6,7 +6,7 @@ import "react-calendar/dist/Calendar.css";
 export default function ReactCalendar() {
   const [value, onChange] = useState(new Date());
   return (
-    <div >
+    <div className="calendar">
       <Calendar onChange={onChange} value={value} />
     </div>
   );

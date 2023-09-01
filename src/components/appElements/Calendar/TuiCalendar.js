@@ -151,7 +151,7 @@ export default function TuiCalendar() {
 
       <TUICalendar
         ref={cal}
-        height="1000px"
+        height="100vh"
         view="week"
         useCreationPopup={true}
         useDetailPopup={true}
