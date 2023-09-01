@@ -352,5 +352,12 @@ NavLink:hover {
   border-radius: 5px;
 }
 
+.IncomingCall{
+  background: rgba(255, 255, 255, 0) !important;
+  width: 100%;
+  height: 100%;
+}
 
-/* Bekzod */
+.Call{
+  background: rgb(254, 254, 254);
+}

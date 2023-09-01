@@ -93,6 +93,7 @@ import TypiconIcon from './views/Icons/TypiconIcons';
 import VoiceCalls from './views/Apps/Calls/VoiceCalls'
 import VideoCalls from "./views/Apps/Calls/VideoCalls"
 import Calendar from "./views/Apps/Calendar";
+import IncomingCalls from "./views/Apps/Calls/IncomingCalls";
 
 function App() {
   return (
@@ -193,6 +194,7 @@ function App() {
           <Route path="/voiceCall" element={<VoiceCalls />} />
           <Route path="/videoCall" element={<VideoCalls />} />
           <Route path="/calendar" element={<Calendar />} />
+          <Route path="/incomingCall" element={<IncomingCalls />} />
         </Routes>
       </div>
     </div>
