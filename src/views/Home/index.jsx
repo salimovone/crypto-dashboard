@@ -10,12 +10,14 @@ import Dashchart from "../../components/DashChart";
 import ExchangeCrypto from "../../components/ExchangeCrypto";
 import HomeEarrings from "../../components/HomeEarrings";
 import BuySell from "../../components/BuySellTable";
+import { IoMdArrowDropdown } from "react-icons/io";
+import { BiCalendar } from "react-icons/bi";
 
 const Dashboard = () => {
   return (
     <>
       <Navbar />
-      <div className="w-full h-[205vh]  p-[30px] pt-0">
+      <div className="w-full h-[205vh]  p-[20px] pt-0">
         <HeadIntro className={"mt-4"} />
         <div className="flex flex-wrap justify-between">
           {cardData.map((item, index) => (
@@ -32,25 +34,27 @@ const Dashboard = () => {
         <Dashchart />
         <ExchangeCrypto />
         <HomeEarrings />
-        <TableDiv>
+        <div className="payment_card p-0 mt-5">
           <div className="w-full flex items-center">
-            <p className="text-[20px] text-[#35446f] font-bold">
+            <p className="text-base md:text-[20px] text-left text-[#35446f] font-bold">
               Market Capitalizations
             </p>
-            <div className="selection w-full flex justify-end">
-              <select name="" id="">
-                <option value="">8-7-2023 - 8-13-2023</option>
-                <option value="">8-7-2023 - 8-13-2023</option>
-                <option value="">8-7-2023 - 8-13-2023</option>
-                <option value="">8-7-2023 - 8-13-2023</option>
-              </select>
+            <div className="selection w-full flex gap-3 justify-end">
+              <div className="flex gap-[10px] flex-col md:flex-row">
+                <div className="w-full   h-[38px] border-[2px] border-white rounded-lg p-[8px] flex items-center max-md:w-full">
+                  <BiCalendar /> <span className="text-[12px] md:text-base">8-1-2023 - 8-31-2023</span>
+                  <IoMdArrowDropdown />
+                </div>
+              </div>
               <button>
                 <AiOutlineDownload />
               </button>
             </div>
           </div>
-          <BuySell />
-        </TableDiv>
+          <div className="w-full mt-0 overflow-x-scroll xl:overflow-x-hidden">
+            <BuySell />
+          </div>
+        </div>
       </div>
     </>
   );
