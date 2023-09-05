@@ -174,9 +174,9 @@ export default () => {
                         <BiDotsVerticalRounded />
                       </button>
                       <div
-                        className={`absolute flex justify-start flex-col w-[160px] h-[70px] top-8 right-5 ${
+                        className={`absolute flex justify-start flex-col py-[10px] px-[15px] rounded-md top-8 right-5 ${
                           action === item.id ? "block" : "hidden"
-                        } p-4 bg-white rounded-sm border z-50`}
+                        } p-4 bg-white  border z-50`}
                       >
                         <button
                           onClick={() => {
